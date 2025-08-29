@@ -1,0 +1,48 @@
+# --- ROS 2 colcon workspace ---
+build/
+install/
+log/
+.colcon*
+.ros/
+
+# --- CMake / compile cache ---
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+compile_commands.json
+
+# --- Editors/IDE ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# --- Misc ---
+*.swp
+*.swo
+.DS_Store
+
+# Auto-generated launch parameter files
+launch_params_*
+
+# TF tree Graphviz outputs
+frames_*.gv
+frames_*.pdf
+
+# Ignore the save_datas folder in control_planner
+src/control_planner/control_planner/save_datas/
+
+# --- Optional large/binary (按需启用) ---
+# *.bag
+# *.onnx
+# *.pt
+# *.bin
+# *.stl
+# *.fbx

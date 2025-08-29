@@ -1,0 +1,6 @@
+image: empty_map.pgm
+resolution: 0.5 # 500 meters, 1000 px
+origin: [-250.0, -250.0, 0.0] #[meter,meter,radia]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
