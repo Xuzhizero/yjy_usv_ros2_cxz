@@ -10,7 +10,7 @@ import time
 
 from pid_interfaces.msg import Command
 from control_planner import usvParam as P0
-from control_planner.waterballControlBasisV9_2 import Waterball_50
+from control_planner.waterballControlBasis import Waterball_50
 
 
 

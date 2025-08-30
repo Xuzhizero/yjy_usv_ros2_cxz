@@ -11,12 +11,12 @@ from scipy import optimize
 
 # 你的自定义包内模块按标准Python包结构导入
 from control_planner import usvParam as P
-from control_planner.usvDynamicsV2_2 import usvDynamics, usvKinematics #V2 is for rudder model
+from control_planner.usvDynamics import usvDynamics, usvKinematics #V2 is for rudder model
 from control_planner.signalGenerator import signalGenerator
-from control_planner import thrustAllocationV2_1 as thrustAllocation
+from control_planner import thrustAllocation as thrustAllocation
 from control_planner.windGenerator import windGenerator
 from control_planner.MFACControl import MFAC_Controller
-from control_planner.waterballControlBasisV9_2 import Waterball_50
+from control_planner.waterballControlBasis import Waterball_50
 
 
 from geometry_msgs.msg import PoseWithCovarianceStamped

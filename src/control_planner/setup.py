@@ -51,12 +51,11 @@ setup(
     entry_points={
         'console_scripts': [
             'hello_node = control_planner.hello_node:main',
-            'usv_Simulation = control_planner.usvSimV2:main',
-            'usv_Simulation_rudder = control_planner.usvSimV3_3:main',
+            'usv_Simulation = control_planner.usvSim:main',
+            'usv_Simulation_rudder = control_planner.usvSim:main',
             'keyboard_interaction = control_planner.keyboard_interaction:main',
-            'keyboard_interactionV2 = control_planner.keyboard_interactionV2_3_1:main',
+            'keyboard_interactionV2 = control_planner.keyboard_interaction:main',
             'publish_joint_angle = control_planner.publish_joint_angle:main',
-            'publish_joint_angleV2 = control_planner.publish_joint_angleV2:main',
         ],
     },
 )
