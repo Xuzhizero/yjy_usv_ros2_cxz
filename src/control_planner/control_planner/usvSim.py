@@ -113,8 +113,8 @@ class USVSimNode(Node):
 
                 if self.loop_counter > 1:
                     # print("\n vx_d:%f, angular_v_d:%f,\n psi_d:%f, psi:%f" % (self.Ball.vx_d, self.Ball.angular_v_d, self.Ball.psi_d, self.Ball.psi))
-                    # print(f"angular_v:{self.Ball.angular_v}")
-                    # print("e:%f, n:%f, e1:%f,  n1:%f" % (self.Ball.e, self.Ball.n, self.Ball.e1, self.Ball.n1))
+                    print(f"angular_v:{self.Ball.angular_v}")
+                    print("e:%f, n:%f, e1:%f,  n1:%f" % (self.Ball.e, self.Ball.n, self.Ball.e1, self.Ball.n1))
                     # print("mode:", self.Ball.mode)
                     # print("model:",self.Ball.model)
                     # print(f"steady_state:{self.Ball.steady_state}")

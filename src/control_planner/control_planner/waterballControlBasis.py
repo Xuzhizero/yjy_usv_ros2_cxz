@@ -525,6 +525,8 @@ class WaterballSubscriber:
         self.node.create_subscription(GoalStatusArray, "/move_base/status", self.mb_status_callback, 10)
         self.node.create_subscription(Float64, "rudder_joint_angle", self.rudder_joint_angle_callback, 10)
         self.node.create_subscription(Float64, "thrust_rpm", self.thrust_rpm_callback, 10)
+        # self.node.create_subscription(Point, "usvState_from_matlab", self.usvState_callback, 10)
+        # self.node.create_subscription(Point, "usvVel_from_matlab", self.usvVel_callback, 10)
         # 其它需要的订阅也在此注册
 
     def state_update(self, mode='Sim'):
@@ -593,6 +595,15 @@ class WaterballSubscriber:
     def object_info_callback(self, data):
         self.Ball.object_angle = data.x
         self.Ball.object_distance = data.y
+    
+    def usvState_callback(self, data):
+        self.Ball.e = data.x
+        self.Ball.n = data.y
+        self.Ball.psi = data.z #deg
+
+    def usvVel_callback(self, data):
+        self.Ball.vx = data.x
+        self.Ball.angular_v = data.y
 
     def keyboard_callback(self, data):
         # 一个按键按下以后的0.2秒内的其他按键都不会被输出。
