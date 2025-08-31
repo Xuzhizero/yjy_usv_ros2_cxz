@@ -99,12 +99,12 @@ class USVSimNode(Node):
                     
                 else:
                     pwm_l, pwm_r = thrustAllocation.thrust_alloc(self.Ball.w_force, self.Ball.v_force, mode=2)
-                    T_l, self.Ball.omega_l = thrustAllocation.thrust_cal(pwm_l, self.Ball.omega_l)
-                    T_r, self.Ball.omega_r = thrustAllocation.thrust_cal(pwm_r, self.Ball.omega_r)
+                    self.Ball.T_l, self.Ball.omega_l = thrustAllocation.thrust_cal(pwm_l, self.Ball.omega_l)
+                    self.Ball.T_r, self.Ball.omega_r = thrustAllocation.thrust_cal(pwm_r, self.Ball.omega_r)
                     
                     d_noise_l = 0
                     d_noise_r = 0
-                    self.usv_dyna.T_list = [T_l + d_noise_l + self.fix_noise, T_r + d_noise_r - self.fix_noise]                    
+                    self.usv_dyna.T_list = [self.Ball.T_l + d_noise_l + self.fix_noise, self.Ball.T_r + d_noise_r - self.fix_noise]                    
 
 
                 self.usv_dyna.update(model=self.Ball.model)                                  
@@ -121,6 +121,7 @@ class USVSimNode(Node):
                     # print(f"wind_psi:{wind_u[0]}, wind_force:{wind_u[1]}")
                     # print(f"w_force:{self.Ball.w_force}")
                     print(f"vx:{self.Ball.vx},vy:{self.Ball.vy}")
+                    print(f"T_l:{self.Ball.T_l},T_r:{self.Ball.T_r}")
                     # print(f"goal_pose:{self.Ball.goal_pose}")
                     # # print(f"distance:{self.Ball.distance}")
                     # # print(f"mb_status:{self.Ball.mb_status}")
