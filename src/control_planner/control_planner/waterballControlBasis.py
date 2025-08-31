@@ -597,8 +597,8 @@ class WaterballSubscriber:
         self.Ball.object_distance = data.y
     
     def usvState_callback(self, data):
-        self.Ball.e = data.x
-        self.Ball.n = data.y
+        self.Ball.n = data.x
+        self.Ball.e = data.y
         self.Ball.psi = data.z #deg
         # print("usvState_callback: ", self.Ball.e, self.Ball.n, self.Ball.psi)
 
