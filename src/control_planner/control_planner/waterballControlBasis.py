@@ -604,7 +604,7 @@ class WaterballSubscriber:
 
     def usvVel_callback(self, data):
         self.Ball.vx = data.x
-        self.Ball.angular_v = data.y
+        self.Ball.angular_v = data.y * 180 / np.pi
         # print("usvVel_callback: ", self.Ball.vx, self.Ball.angular_v)
 
     def keyboard_callback(self, data):
