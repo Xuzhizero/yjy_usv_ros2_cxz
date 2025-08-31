@@ -107,8 +107,8 @@ class USVSimNode(Node):
                     self.usv_dyna.T_list = [self.Ball.T_l + d_noise_l + self.fix_noise, self.Ball.T_r + d_noise_r - self.fix_noise]                    
 
 
-                self.usv_dyna.update(model=self.Ball.model)                                  
-                self.Ball.e, self.Ball.n = self.usv_kine.update(self.Ball.psi, self.Ball.vx, self.Ball.vy)
+                # self.usv_dyna.update(model=self.Ball.model)                                  
+                # self.Ball.e, self.Ball.n = self.usv_kine.update(self.Ball.psi, self.Ball.vx, self.Ball.vy)
                 
 
                 if self.loop_counter > 1:
