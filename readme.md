@@ -2,10 +2,11 @@ main分支存储的是包含动力学模型的分支，usvSim-pureAlgorithm存�
 
 运行顺序：
 0. 在maltab的命令行输入setenv('ROS_DOMAIN_ID','5')，建立和Ubuntu ROS2的连接
-1. 在matlab里面打开UE5
-2. 运行ROS2中算法
-3. 点击maltab中的run
-4. 点击UE5中的play
+1. 在StartASVDemo.mlx中运行节，分别是"The Simulink Model is ..." 和"Scenario 1: ..."，加载数据
+2. 在matlab里面打开UE5
+3. 运行ROS2中算法
+4. 点击maltab中的run
+5. 点击UE5中的play
 以上顺序不能颠倒，完成以上步骤以后正式启动。
 
 运行ROS2算法的流程：
