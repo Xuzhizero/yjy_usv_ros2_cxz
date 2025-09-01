@@ -1,4 +1,6 @@
+# 分支介绍
 main分支存储的是包含动力学模型的分支，usvSim-pureAlgorithm存储的是不包含动力学模型的分支
+# 基本使用方法
 
 运行顺序：
 0. 在maltab的命令行输入setenv('ROS_DOMAIN_ID','5')，建立和Ubuntu ROS2的连接
@@ -22,7 +24,7 @@ main分支存储的是包含动力学模型的分支，usvSim-pureAlgorithm存�
 上面的顺序也不能乱。
 
 
-代码功能基本介绍：
+# 代码功能基本介绍
 usvSimV3.py is the version for rudder-thrust model
 
 
@@ -38,3 +40,7 @@ launch_usvSimV2.launch.py: a launch file used for launching rudder-thrust model 
 keyboard_interactionV2.py: 模拟方向盘，可以根据按键时长实现持续输入
 
 publish_joint_angleV2.py: 可以订阅来自keyboard_interactionV2.py的消息，更新自己的joint_position, 然后发布话题/joint_states, 负责在Rviz中呈现角度的变化
+
+# 现存问题
+1. key_interaction， 按同一个键会不断刷出，只需要出现一次就行
+2. key_interaction，按不同的键，出现的字符是呈现阶梯性的，而不是换行顶格
