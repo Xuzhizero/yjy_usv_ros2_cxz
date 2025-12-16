@@ -1,225 +1,89 @@
-# 关卡迁移与版本兼容 (Level Migration)
+# 软件开发过程记录 / 开发日志
 
-**Tags:** `integration`, `migration`, `version-compatibility`, `ue5`, `level-upgrade`
+**Tags:** `ue5`, `worldpartition`, `blueprint`, `migration`, `simulink`, `devlog`
 
-**日期**: 2025-12-16
-**状态**: 模板 / 待填写
+## 摘要
 
----
-
-## 1. 背景 (Background)
-
-[描述关卡迁移的背景和触发原因]
-
-**场景**:
-- 从 UE 4.27 迁移到 UE 5.x
-- 项目结构调整或重构
-- 资产更新与兼容性处理
-
-**目标**:
-- 完成关卡无损迁移
-- 保证所有蓝图正常编译
-- 验证功能完整性
+本文档记录了在UE5仿真系统中，将摄像头与Simulink接口从Map2迁移至Map1的完整过程。主要解决了World Partition机制下关卡蓝图Actor引用失效、变量丢失以及迁移资产蓝图编译错误等问题。通过重建Actor引用、补全变量、启用插件及添加输入映射等措施，成功完成了跨关卡集成，并总结了UE5 World Partition环境下的架构优化建议和操作规范。
 
 ---
 
-## 2. 问题描述 (Problem)
-
-### 2.1 主要问题
-
-[详细描述遇到的问题]
-
-**示例问题**:
-- ❌ 资产引用丢失
-- ❌ 材质渲染异常
-- ❌ 物理碰撞失效
-- ❌ 蓝图节点过时
-
-### 2.2 错误信息
-
-```
-[贴入具体的错误日志或截图]
-```
-
-### 2.3 影响范围
-
-- [ ] 核心游戏逻辑
-- [ ] 渲染效果
-- [ ] 物理模拟
-- [ ] ROS2 通信接口
+## 基本信息
+| 项目名称 | 无人船视觉仿真系统 |
+|----------|--------------------|
+| 记录日期 | 2025年12月16日     |
+| 记录人   | 曹勖之             |
+| 关联模块 | UE5仿真场景集成    |
 
 ---
 
-## 3. 原因分析 (Root Cause)
+## 问题记录一：关卡蓝图跨关卡迁移引用失效
 
-### 3.1 根本原因
+### 问题（目标）描述
+在将摄像头与Simulink接口从Map2（摄像头模型关卡）集成至Map1（含桥梁、风机、电塔、集装箱船、快艇、军舰、瑶光1号、岛礁、沙滩及动态天气元素的场景关卡）过程中，因UE5 World Partition机制，原关卡蓝图中对Actor的直接引用在新关卡中失效，显示为"Unknown"，导致蓝图编译错误。
 
-[分析问题的根源]
+### 原因分析
+1. **Level Blueprint的Actor引用机制**：UE5 Level Blueprint中的Actor引用绑定的是关卡内实例的唯一标识（包含关卡路径/对象GUID/内部名），而非按名称匹配。跨关卡复制节点后，即使将同名Actor搬入新关卡，其实例身份已变化，UE无法自动匹配原有引用。
+2. **World Partition特性限制**：目标关卡启用了World Partition，Actor不再隶属于传统的Persistent Level/SubLevel体系，而是属于World Partition Cell。在此模式下，Level Blueprint中标注"from Persistent Level"的引用在跨关卡复制后必然失效。
+3. **变量未自动迁移**：关卡蓝图中的变量（如LastLocation、LastRotation、boolLocValid、boolRotValid等）属于关卡本身，不是独立资产，复制节点时不会自动携带至新关卡。
 
-**可能原因**:
-- UE 版本升级导致 API 变化
-- 资产路径变更
-- 蓝图节点被弃用
-- 插件版本不兼容
+### 处理措施
+1. **重建Actor引用**：
+   - 在目标关卡Level Blueprint中删除所有显示为"Unknown"的引用节点
+   - 在场景中选中正确的目标Actor
+   - 返回Level Blueprint空白处右键，选择"Create a Reference to [Actor名称]"
+   - 将新建的引用节点接回原有逻辑链路
+2. **补全缺失变量**：
+   - 在目标关卡蓝图的My Blueprint → Variables中新建以下变量：
+     - LastLocation：类型Vector
+     - LastRotation：类型Rotator
+     - boolLocValid：类型Boolean
+     - boolRotValid：类型Boolean
+   - 对于误识别为变量"True"的节点，删除后用Boolean常量节点替代
+3. **验证与测试**：完成上述修复后，点击Compile验证蓝图编译通过，并执行Play测试确认功能正常。
 
-### 3.2 关键因素
-
-1. **版本差异**:
-   - 旧版本: [UE 4.27 / UE 5.0]
-   - 新版本: [UE 5.3 / UE 5.4]
-
-2. **依赖关系**:
-   - 外部插件: [列表]
-   - 第三方库: [列表]
-
----
-
-## 4. 处理方案 (Solution)
-
-### 4.1 迁移步骤
-
-**Step 1: 备份原始项目**
-
-```bash
-# 备份整个项目
-cp -r OriginalProject OriginalProject_Backup_20251216
-```
-
-**Step 2: 清理中间文件**
-
-```bash
-# 删除临时文件
-rm -rf Binaries/ Intermediate/ Saved/ DerivedDataCache/
-```
-
-**Step 3: 使用 UE 内置迁移工具**
-
-1. 打开 UE 编辑器
-2. 选择 `File > Open Project`
-3. 选择项目文件，UE 会自动提示升级
-4. 点击 `Convert in-place` 或 `Copy and Convert`
-
-**Step 4: 手动修复问题**
-
-[详细记录手动修复的步骤]
-
-```cpp
-// 示例：修复过时的 API 调用
-// 旧代码:
-// Actor->SetActorLocation(NewLocation);
-
-// 新代码:
-// Actor->SetActorLocation(NewLocation, false, nullptr, ETeleportType::None);
-```
-
-### 4.2 蓝图修复
-
-**修复过时节点**:
-- 使用 `Refresh All Nodes` 功能
-- 手动替换不兼容的节点
-- 更新材质函数调用
-
-### 4.3 资产重新导入
-
-```bash
-# 批量重新导入纹理
-for texture in Assets/Textures/*.tga; do
-    # 在 UE 中重新导入
-done
-```
+### 结论
+系统功能恢复正常，摄像头与Simulink接口成功集成至目标场景关卡，未对原关卡及核心资产造成影响。
 
 ---
 
-## 5. 验证结果 (Verification)
+## 问题记录二：迁移资产蓝图编译错误
 
-### 5.1 功能验证清单
+### 问题（目标）描述
+在关卡集成过程中，BP_Base_Truck和Mine_Waterline_6_DemoV3两个蓝图出现编译错误，阻止PIE（Play In Editor）运行。
 
-- [ ] 关卡可以正常打开
-- [ ] 所有蓝图编译通过
-- [ ] 材质渲染正常
-- [ ] 物理碰撞正常
-- [ ] ROS2 节点通信正常
-- [ ] 运行时无错误日志
+### 原因分析
+1. **BP_Base_Truck错误原因**：
+   - 缺少VR/HeadMountedDisplay相关插件，导致IsHeadMountedDisplayEnabled和ResetOrientationAndPosition函数找不到
+   - 项目输入设置中缺少Action Mapping（Light、SwitchCamera），导致InputAction事件引用未知Action
+   - 部分节点签名变化，需要刷新
+2. **Mine_Waterline_6_DemoV3错误原因**：
+   - 状态变量缺失（同问题记录一）
+   - Actor引用失效显示为Unknown（同问题记录一）
 
-### 5.2 性能对比
+### 处理措施
+1. **BP_Base_Truck修复**：
+   - Edit → Plugins中启用Head Mounted Display插件，重启UE
+   - Edit → Project Settings → Input中添加Action Mappings：Light、SwitchCamera
+   - 对报红节点执行右键 → Refresh Node
+2. **Mine_Waterline_6_DemoV3修复**：按问题记录一的处理措施执行变量补全和引用重建
+3. **收尾操作**：
+   - 对迁移资源根目录执行Fix Up Redirectors in Folder
+   - File → Save All保存所有修改
 
-| 指标 | 迁移前 | 迁移后 | 变化 |
-|------|--------|--------|------|
-| FPS | 60 | 58 | -3.3% |
-| 内存占用 | 2.5GB | 2.8GB | +12% |
-| 加载时间 | 5s | 6s | +20% |
-
-### 5.3 测试方法
-
-```bash
-# 运行自动化测试
-./RunTests.sh integration_test
-
-# 手动测试关键功能
-# 1. 启动仿真
-# 2. 检查 USV 行为
-# 3. 验证传感器数据
-```
+### 结论
+两个蓝图均编译通过，PIE运行正常，系统集成完成。
 
 ---
 
-## 6. 经验总结 (Lessons Learned)
-
-### 6.1 最佳实践
-
-1. **迁移前务必备份**:
-   - 完整备份项目文件
-   - 记录当前版本信息
-
-2. **分阶段迁移**:
-   - 先迁移核心关卡
-   - 再迁移辅助资产
-   - 最后处理插件依赖
-
-3. **自动化验证**:
-   - 编写自动化测试脚本
-   - 定期回归测试
-
-### 6.2 常见陷阱
-
-⚠️ **避免的错误**:
-- 直接在原项目上升级（应该先复制）
-- 跳过清理中间文件步骤
-- 忽略插件兼容性检查
-
-### 6.3 改进建议
-
-- 建立版本控制分支策略
-- 定期进行版本兼容性测试
-- 维护插件版本兼容性列表
+## 经验总结与改进建议
+1. **架构优化建议**：将Level Blueprint中的核心逻辑（Simulink通信、摄像头管理、状态变量等）迁移至独立的Actor Blueprint（如BP_SimManager），Level Blueprint仅保留初始化绑定，可大幅降低后续关卡迁移的维护成本。
+2. **操作规范**：UE5中移动Map/资产应在Content Browser内通过拖拽或Move操作完成，移动后务必执行Fix Up Redirectors；禁止在系统文件管理器中直接操作.umap文件。
+3. **World Partition注意事项**：在World Partition关卡中，应避免在Level Blueprint中直接引用放置的Actor，推荐使用GetAllActorsOfClass、Tag查找或Manager模式实现引用解耦。
 
 ---
 
-## 7. 关联资源 (References)
-
-### 7.1 相关 Commit
-
-```bash
-# 关联的 git commit (如有)
-git log --oneline --grep="migration"
-```
-
-- Commit: `abc1234` - "Migrate to UE 5.3"
-- Commit: `def5678` - "Fix blueprint compilation errors after migration"
-
-### 7.2 相关文档
-
-- [UE5 迁移指南](https://docs.unrealengine.com/5.3/en-US/migrating-projects-to-unreal-engine-5/)
-- [蓝图 API 变更列表](https://docs.unrealengine.com/5.3/en-US/API/)
-- [项目架构文档](../../docs/architecture.md)
-
-### 7.3 外部参考
-
-- [Unreal Engine Migration Best Practices](https://example.com)
-- [UE5 Breaking Changes](https://example.com)
-
----
-
-**记录人**: [姓名]
-**审核人**: [姓名]
-**完成日期**: [YYYY-MM-DD]
+## 附件
+- 修复后关卡蓝图截图（2张）
+  - ![Fix reference screenshot 1](img/fix_reference_01.png)
+  - ![Fix reference screenshot 2](img/fix_reference_02.png)
