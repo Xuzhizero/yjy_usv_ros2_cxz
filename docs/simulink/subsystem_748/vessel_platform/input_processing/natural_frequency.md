@@ -1,16 +1,68 @@
+# Natural Frequencies 固有频率模块分析
+
+## 模块功能说明
+
+**Natural Frequencies** 模块计算船体在heave（垂荡）、roll（横摇）、pitch（纵摇）三个自由度的固有角频率。
+
+## 输入输出端口
+
+### 输入
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $G_{33}$ | G33 (来自G_CF模块) | 垂荡恢复刚度 | N/m |
+| 2 | $G_{44}$ | G44 (来自G_CF模块) | 横摇恢复刚度 | N·m/rad |
+| 3 | $G_{55}$ | G55 (来自G_CF模块) | 纵摇恢复刚度 | N·m/rad |
+| 4 | $M$ | M (总惯性矩阵) | 6×6惯性矩阵 | kg, kg·m² |
+
+### 输出
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $\omega_3, \omega_4, \omega_5$ | w3 w4 w5 | heave/roll/pitch固有角频率 | rad/s |
+
+## Simulink变量对应关系表
+
+| 物理量符号 | Simulink变量名 | 计算公式/来源 | 说明 |
+|------------|----------------|---------------|------|
+| $G_{33}$ | G33 | 输入端口1 | 垂荡刚度 |
+| $G_{44}$ | G44 | 输入端口2 | 横摇刚度 |
+| $G_{55}$ | G55 | 输入端口3 | 纵摇刚度 |
+| $M$ | M | 输入端口4 | 惯性矩阵 |
+| $M_{33}$ | Selector输出 | M(3,3) | 垂荡质量 |
+| $M_{44}$ | Selector1输出 | M(4,4) | 横摇惯量 |
+| $M_{55}$ | Selector2输出 | M(5,5) | 纵摇惯量 |
+| $G_{33}/M_{33}$ | Divide输出 | 刚度/质量比 | 中间变量 |
+| $G_{44}/M_{44}$ | Divide1输出 | 刚度/惯量比 | 中间变量 |
+| $G_{55}/M_{55}$ | Divide2输出 | 刚度/惯量比 | 中间变量 |
+| $[\omega_3,\omega_4,\omega_5]$ | sqrt输出 | $\sqrt{[G_{ii}/M_{ii}]}$ | 固有频率向量 |
+
+## 核心计算公式
+
+$$
+\boxed{
+\omega_i = \sqrt{\frac{G_{ii}}{M_{ii}}}
+\quad
+(i = 3,4,5)
+}
+$$
+
+即：
+- heave：$\omega_3 = \sqrt{G_{33} / M_{33}}$
+- roll：$\omega_4 = \sqrt{G_{44} / M_{44}}$
+- pitch：$\omega_5 = \sqrt{G_{55} / M_{55}}$
+
+---
+
+## 详细说明
+
 <p align="center">
   <img width="1241" height="143" alt="image" src="https://github.com/user-attachments/assets/34961e83-32a6-42af-824d-2f346201686e" />
 </p>
 
-这是Input processing模块中的natural frequencies子模块
-
 <p align="center">
   <img width="838" height="416" alt="image" src="https://github.com/user-attachments/assets/2ba861c3-2df6-44fc-afa4-7b3f66ef919f" />
 </p>
-
-这是子模块的内部构造，要求你根据上面图片分析natural frequencies的输入输出，作用，以及它内部的计算表达式，以及如何通过simulink实现的构造机理
-
-# 回答
 
 很好，这个 **Natural Frequencies** 子模块在你的整套 *Input Processing* 里，作用非常明确、而且**物理含义是完全可解释的**。我按你要求，**严格依据截图**，从「输入输出 → 物理意义 → 数学公式 → Simulink 实现机理」四层来分析。
 

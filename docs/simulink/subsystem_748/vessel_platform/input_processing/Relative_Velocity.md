@@ -16,27 +16,51 @@ $$\nu_r = \nu - \nu_c$$
 
 ### 输入
 
-- **船体绝对速度$\nu$**：6×1向量$(u, v, w, p, q, r)^T$，来自6DOF模块的状态输出
-
-- **洋流速度$\nu_c$**：6×1向量，通常只有平动分量$(u_c, v_c, w_c, 0, 0, 0)^T$
-
-洋流速度需要从NED坐标系转换到船体坐标系：
-
-$$\nu_c^{body} = J^{-1}(\eta) \cdot \nu_c^{NED}$$
-
-或者对于平动部分：
-$$\begin{pmatrix} u_c \\ v_c \\ w_c \end{pmatrix}^{body} = R_{nb}^T \begin{pmatrix} u_c \\ v_c \\ w_c \end{pmatrix}^{NED}$$
-
-其中$R_{nb}$是从船体系到NED系的旋转矩阵。
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $V_c$ | V_c (Current Speed) | 洋流速度大小 | m/s |
+| 2 | $\beta_c$ | beta_c (Current Direction) | 洋流方向角 | rad |
+| 3 | $X$ | X (State Vector) | 船体状态向量（包含位置、姿态、速度） | - |
 
 ### 输出
 
-- **相对速度$\nu_r$**：6×1向量$(u_r, v_r, w_r, p_r, q_r, r_r)^T$
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $\nu_r$ | Relative Velocity | 6×1相对速度向量 | m/s, rad/s |
+
+## Simulink变量对应关系表
+
+| 物理量符号 | Simulink变量名 | 计算公式/来源 | 说明 |
+|------------|----------------|---------------|------|
+| $V_c$ | V_c | 输入端口1 | 洋流速度大小 |
+| $\beta_c$ | beta_c | 输入端口2 | 洋流方向角 |
+| $\psi$ | Bus Selector输出 | 从X中选取 | 船体航向角 |
+| $\beta_c + \psi$ | Add输出 | 相对洋流角 | 洋流相对船体方向 |
+| $\cos(\beta_c+\psi)$ | Trigonometric Function输出 | 三角函数 | 投影系数 |
+| $\sin(\beta_c+\psi)$ | Trigonometric Function1输出 | 三角函数 | 投影系数 |
+| $u_c$ | Product输出 | $V_c \cdot \cos(\beta_c+\psi)$ | 纵向洋流分量 |
+| $v_c$ | Product1输出 | $V_c \cdot \sin(\beta_c+\psi)$ | 横向洋流分量 |
+| $w_c$ | Constant输出 | 0 | 垂向洋流分量 |
+| $\nu_c$ | Mux3输出 | $[u_c, v_c, 0, 0, 0, 0]^T$ | 洋流速度向量 |
+| $\nu$ | Mux输出 | 从X1中选取 | 船体绝对速度 |
+| $\nu_r$ | Add1输出 | $\nu - \nu_c$ | 相对速度 |
+
+## 核心计算公式
+
+洋流速度从NED系转换到船体系：
+$$u_c = V_c \cdot \cos(\beta_c + \psi)$$
+$$v_c = V_c \cdot \sin(\beta_c + \psi)$$
+$$w_c = 0$$
+
+相对速度：
+$$\nu_r = \nu - \nu_c$$
 
 由于洋流通常没有旋转分量，角速度相对值等于绝对值：
 $$p_r = p, \quad q_r = q, \quad r_r = r$$
 
-## 核心计算公式
+---
+
+## 详细说明
 
 ### 相对速度计算
 

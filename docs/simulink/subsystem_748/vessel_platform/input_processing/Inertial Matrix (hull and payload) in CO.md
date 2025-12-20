@@ -1,16 +1,77 @@
+# Inertial Matrix (hull and payload) in CO 转动惯量矩阵模块分析
+
+## 模块功能说明
+
+**Inertial Matrix (hull and payload) in CO** 模块使用平行轴定理，将船体和载荷的转动惯量从各自质心转换到坐标原点（CO），计算整体系统在CO坐标系下的3×3转动惯量矩阵 $I_g$。
+
+## 输入输出端口
+
+### 输入
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $r_g$ | rg (来自CG corrected for payload) | 修正后的重心位置向量 | m |
+| 2 | $r_p$ | rp (Payload Location) | 载荷在CO坐标系下的位置向量 | m |
+| 3 | $m_p$ | mp (Payload Mass) | 载荷质量 | kg |
+
+内部使用的常量：
+
+| 常量名 | Simulink变量名 | 说明 |
+|--------|----------------|------|
+| $m$ | mass (kg)（值=m） | 船体质量 |
+| $I_{g,CG}$ | Ig_CG (Inertia at CG) | 船体在质心处的转动惯量矩阵（3×3） |
+
+### 输出
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $I_g$ | Ig | 船体+载荷在CO坐标系下的转动惯量矩阵（3×3） | kg·m² |
+
+## Simulink变量对应关系表
+
+| 物理量符号 | Simulink变量名 | 计算公式/来源 | 说明 |
+|------------|----------------|---------------|------|
+| $m$ | mass (kg) | Constant块 | 船体质量 |
+| $m_p$ | mp | 输入端口3 | 载荷质量 |
+| $r_g$ | rg | 输入端口1 | 修正后重心位置 |
+| $r_p$ | rp | 输入端口2 | 载荷位置 |
+| $I_{g,CG}$ | Ig_CG | Constant块 | 质心处惯量 |
+| $S(r_g)$ | Smtrx输出 | 反对称矩阵构造 | 重心叉乘矩阵 |
+| $S(r_p)$ | Smtrx1输出 | 反对称矩阵构造 | 载荷叉乘矩阵 |
+| $S(r_g)^2$ | Matrix Multiply输出 | $S(r_g) \times S(r_g)$ | 中间变量 |
+| $S(r_p)^2$ | Matrix Multiply1输出 | $S(r_p) \times S(r_p)$ | 中间变量 |
+| $m \cdot S(r_g)^2$ | Product输出 | 船体平行轴修正项 | 中间变量 |
+| $m_p \cdot S(r_p)^2$ | Product1输出 | 载荷平行轴修正项 | 中间变量 |
+| $I_g$ | Sum输出 | 最终转动惯量 | 输出 |
+
+## 核心计算公式
+
+$$
+\boxed{
+I_g = I_{g,CG} - m \, S(\mathbf{r}_g)^2 - m_p \, S(\mathbf{r}_p)^2
+}
+$$
+
+其中反对称矩阵：
+$$
+S(\mathbf{r}) = \begin{bmatrix}
+0 & -z & y \\
+z & 0 & -x \\
+-y & x & 0
+\end{bmatrix}
+$$
+
+---
+
+## 详细说明
+
 <div align="center">
 <img width="1313" height="131" alt="image" src="https://github.com/user-attachments/assets/57327f7e-d55b-4ba7-940c-422706c7ade6" />
 </div>
 
-这是Input processing 模块中的Inertial Matrix (hull and payload) in CO子模块
-
 <div align="center">
 <img width="1194" height="674" alt="image" src="https://github.com/user-attachments/assets/f50ee48c-2c52-4903-af3e-814bc7e2e9d9" />
 </div>
-
-这是Inertial Matrix (hull and payload) in CO子模块的内部构造，要求你根据接线，提供计算表达式，和Simulnk的构造机理（即如何实现通过simulink实现这个计算表达式的）
-
-# 回答
 
 
 
