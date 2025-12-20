@@ -1,12 +1,15 @@
 # Draft(吃水深度)模块分析
 
 ## 提问
+<img width="1222" height="112" alt="image" src="https://github.com/user-attachments/assets/a989a686-2ddc-465f-908c-ea5fe414efca" />
+
+这是input processing模块中的draft子模块
 
 <div align="center">
   <img src="https://cdn.nlark.com/yuque/0/2025/png/2408029/1752652778980-b94de14b-408e-439a-84a3-46da22579acd.png" alt="Draft模块内部构造">
 </div>
 
-这个是Simulink，draft(m)模块的具体内部构造，如前述，这个模块的输出是吃水深度，然后输入nabla是排开水的体积。告诉我其他的输入的含义，以及为什么可以通过这样的构造得到吃水深度？
+这个是draft(m)模块的具体内部构造，如前述，这个模块的输出是吃水深度，然后输入nabla是排开水的体积。告诉我其他的输入的含义，以及为什么可以通过这样的构造得到吃水深度？
 
 ---
 
@@ -139,3 +142,4 @@ Simulink 里对这四个量做一连串"÷"运算，正是把 $V$ 一步步"拆"
 > **关键在于把方形系数 $C_b$ 作为一个只和"几何形状"有关的常数来预先确定，绝不依赖于未知的吃水深度 $T$。**
 >
 > 你可以通过 CAD 直接量体积、或几何积分，也可参考同类艇型的经验值，来得到 $C_b$。然后代入上式，一下子就能求出真正的吃水 $T$。
+
