@@ -65,20 +65,31 @@ $$BM_L = \frac{I_L}{\nabla}$$
 
 $I_L$为水线面对横中线（x=0）的面积二次矩。由于船体长度远大于宽度，通常$GM_L >> GM_T$。
 
-### 浮心高度估算
+### 浮心高度计算（双体船实现）
 
-对于常见船型，浮心高度可近似为：
+对于本项目的双体船模型，浮心高度 KB 采用专门针对双体船结构的计算公式：
 
-$$KB \approx \frac{T}{2} \cdot C_{KB}$$
+$$KB = \frac{5}{6}T - \frac{1}{6} \cdot \frac{\nabla}{\text{length} \times \text{beam}}$$
 
-其中$T$是吃水深度，$C_{KB}$是形状系数，典型值0.52-0.56。
+其中：
+- $T$ 是吃水深度
+- $\nabla$ 是排水体积
+- $\text{length}$ 是船体长度
+- $\text{beam}$ 是浮筒宽度
 
-### 重心高度
+**注意**：此公式与传统的单体船近似公式 $KB \approx \frac{T}{2} \cdot C_{KB}$（其中 $C_{KB} \approx 0.52\text{–}0.56$）不同，它针对双体船的几何特性进行了定制计算。
 
-$$KG = \frac{\sum m_i z_i}{\sum m_i}$$
+### 重心高度计算
 
-考虑载荷时：
-$$KG = \frac{m_h \cdot z_h + m_p \cdot z_p}{m_h + m_p}$$
+在 Simulink 模型中，重心高度 KG 的计算方式为：
+
+$$KG = T - z_G$$
+
+其中：
+- $T$ 是吃水深度
+- $z_G$ 是修正后的重心向量 $r_g$ 的 z 坐标分量（通过 Selector3 选取）
+
+**说明**：模型假设载荷的影响已经体现在修正后的重心位置 $r_g$ 中（该值由 "CG corrected for payload" 模块计算得出，计算公式为 $r_g = \frac{m_h \cdot r_{g,h} + m_p \cdot r_p}{m_h + m_p}$），因此只需用吃水深度减去该 z 坐标即可得到 KG。这与传统的质量加权平均公式 $KG = \frac{m_h \cdot z_h + m_p \cdot z_p}{m_h + m_p}$ 在形式上不同，但物理意义等效。
 
 ## 与恢复力矩的关系
 

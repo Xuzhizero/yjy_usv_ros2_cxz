@@ -43,9 +43,11 @@ $G_{CF}$ 由以下参数构成：
 
 最终的6×6刚度矩阵大致形式为：
 
-$$G_{CO} = A^T \times \text{diag}[0, 0, \rho g \nabla, \rho g \nabla GM_T, \rho g \nabla GM_L, 0] \times A$$
+$$G_{CO} = A^T \times \text{diag}[0, 0, \rho g (2 A_w), \rho g \nabla GM_T, \rho g \nabla GM_L, 0] \times A$$
 
 这种坐标变换确保了刚度矩阵能正确反映船体在目标坐标系下的静水回复特性。
+
+**注意**：对于双体船模型，垂荡恢复刚度 $G_{33}$ 使用水线面积 $2A_w$（两个浮筒的水线面积之和）而非排水体积 $\nabla$，这更符合小垂荡运动的物理特性。
 
 ---
 
@@ -82,15 +84,19 @@ $$F_{\text{restoring}} = -G_{CF} \times \eta$$
 + $G_{CF}$：刚度矩阵
 + $\eta$：位置/姿态偏移向量
 
-#### 3. 矩阵结构
+#### 3. 矩阵结构（CF 坐标系下）
 
-$$G_{CF} = \text{diag}([0, 0, \rho g \nabla \times 2 \times A_w, \rho g \nabla \times GM_T, \rho g \nabla \times GM_L, 0])$$
+$$G_{CF} = \text{diag}([0, 0, \rho g (2 A_w), \rho g \nabla GM_T, \rho g \nabla GM_L, 0])$$
+
+其中各项的物理意义为：
 
 + 前两个0：纵荡、横荡无静水回复力
-+ $G_{33}$：垂荡回复刚度
-+ $G_{44}$：横摇回复刚度
-+ $G_{55}$：纵摇回复刚度
++ $G_{33} = \rho g (2 A_w)$：**垂荡回复刚度**，使用双浮筒水线面积 $2A_w$（而非排水体积 $\nabla$）
++ $G_{44} = \rho g \nabla GM_T$：**横摇回复刚度**，由排水体积和横向稳心高度决定
++ $G_{55} = \rho g \nabla GM_L$：**纵摇回复刚度**，由排水体积和纵向稳心高度决定
 + 最后0：艏摇无静水回复力矩
+
+**说明**：在 Simulink 实现中，垂荡刚度 $G_{33}$ 采用水线面积法计算（$\rho g \cdot 2A_w$），这与基于排水体积的理论公式 $\rho g \nabla$ 不同。对于小幅度垂荡运动，水线面积法更准确地反映了浮力变化率，特别适用于双体船结构。
 
 ### 关于nabla（$\nabla$）
 
