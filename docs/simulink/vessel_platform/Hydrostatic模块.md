@@ -1,7 +1,12 @@
+<div align="center">
 <img width="2300" height="621" alt="image" src="https://github.com/user-attachments/assets/953e66cd-aff5-4097-a173-13371aec86a2" />
+</div>
 
 这是vessel platform模块中的Hydrostatic子模块
+
+<div align="center">
 <img width="1177" height="746" alt="image" src="https://github.com/user-attachments/assets/d31debe2-bbef-410e-a5c0-9258a907c3fe" />
+</div>
 
 这是Hydrostatic模块的内部构造，要求你分析Hydrostatic模块子模块的功能和构造
 
@@ -22,9 +27,9 @@
 
 在总力矩平衡里，它对应：
 
-[
-\tau_{\text{hydrostatic}} = - G , \eta
-]
+$$
+\tau_{\text{hydrostatic}} = - G \cdot \eta
+$$
 
 （符号正负取决于你在 Sum of Forces 里的约定）
 
@@ -61,17 +66,17 @@
 
 这是你在 **Input Processing** 中已经算好的：
 
-[
+$$
 G =
 \begin{bmatrix}
-0 & 0 & 0 & 0 & 0 & 0 \
-0 & 0 & 0 & 0 & 0 & 0 \
-0 & 0 & G_{33} & 0 & 0 & 0 \
-0 & 0 & 0 & G_{44} & 0 & 0 \
-0 & 0 & 0 & 0 & G_{55} & 0 \
+0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & G_{33} & 0 & 0 & 0 \\
+0 & 0 & 0 & G_{44} & 0 & 0 \\
+0 & 0 & 0 & 0 & G_{55} & 0 \\
 0 & 0 & 0 & 0 & 0 & 0
 \end{bmatrix}
-]
+$$
 
 ---
 
@@ -90,39 +95,39 @@ G =
 
 在小扰动、小角度假设下：
 
-[
+$$
 \boxed{
-\tau_{\text{hs}} = - G , \eta
+\tau_{\text{hs}} = - G \cdot \eta
 }
-]
+$$
 
 其中：
 
-[
+$$
 \eta =
 \begin{bmatrix}
 x & y & z & \phi & \theta & \psi
 \end{bmatrix}^T
-]
+$$
 
 ---
 
 ## 各自由度的物理含义
 
 * **heave（z）**
-  [
-  F_z = - G_{33} , z
-  ]
+  $$
+  F_z = - G_{33} \cdot z
+  $$
 
 * **roll（φ）**
-  [
-  M_x = - G_{44} , \phi
-  ]
+  $$
+  M_x = - G_{44} \cdot \phi
+  $$
 
 * **pitch（θ）**
-  [
-  M_y = - G_{55} , \theta
-  ]
+  $$
+  M_y = - G_{55} \cdot \theta
+  $$
 
 其余自由度为 **0**（这是正确的物理结论）。
 
@@ -155,9 +160,9 @@ X ──► [x, y, z, φ, θ, ψ]
 
 这是为了后面做：
 
-[
+$$
 G \times \eta
-]
+$$
 
 ---
 
@@ -169,9 +174,9 @@ G × eta ──► Hydrostatic.Hydrostatic
 
 数学上：
 
-[
-\tau_{\text{hs}} = G , \eta
-]
+$$
+\tau_{\text{hs}} = G \cdot \eta
+$$
 
 （符号在更外层统一）
 
