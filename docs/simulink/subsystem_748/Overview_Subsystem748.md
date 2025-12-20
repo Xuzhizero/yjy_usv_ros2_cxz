@@ -8,6 +8,61 @@
 | [Payload 载荷模块](payload/Overview_payload.md) | 提供附加载荷的质量、位置等参数，用于影响船体惯性和重心 |
 | [Vessel Platform 船体平台模块](vessel_platform/Overview_vessel_platform.md) | 模拟船体本身的6自由度动力学，包括动力学方程求解及各类力的计算 |
 
+## 文档层级架构
+
+```
+docs/simulink/subsystem_748/
+├── Overview_Subsystem748.md          # 本文档 - Subsystem 748 总览
+├── environment/                       # 环境模块
+│   ├── Overview_environment.md
+│   ├── Current.md                     # 洋流模型
+│   ├── Earth.md                       # 地球参数（重力等）
+│   └── Water.md                       # 水介质参数（密度等）
+├── payload/                           # 载荷模块
+│   └── Overview_payload.md
+└── vessel_platform/                   # 船体平台模块（核心）
+    ├── Overview_vessel_platform.md
+    ├── 6dof/                          # 六自由度运动求解
+    │   ├── Overview_6dof.md
+    │   ├── Kinematics运动学模块分析.md
+    │   └── SSA模块分析.md
+    ├── hydrodynamics/                 # 水动力学
+    │   ├── Overview_Hydrodynamics.md
+    │   ├── Damping(阻尼模块)分析.md
+    │   └── 科氏力模块分析.md
+    ├── hydrostatic/                   # 静水力学
+    │   └── Overview_hydrostatic.md
+    ├── inertials/                     # 惯性参数
+    │   └── Overview_inertials.md
+    ├── initial_conditions/            # 初始条件
+    │   └── Overview_initial_conditions.md
+    ├── input_processing/              # 输入预处理
+    │   ├── Overview_input_processing.md
+    │   ├── Added_Mass.md              # 附加质量
+    │   ├── GM.md                      # 稳心高度
+    │   ├── MRB_CG.md                  # 刚体质量矩阵
+    │   ├── Relative_Velocity.md       # 相对速度
+    │   ├── Transform_CF_to_CO.md      # CF到CO坐标变换
+    │   ├── Transform_CG_to_CO.md      # CG到CO坐标变换
+    │   ├── Volume.md                  # 排水体积
+    │   ├── draft(吃水深度)计算原理.md
+    │   ├── natural_frequency.md       # 固有频率
+    │   ├── G_CF (spring stiffness matrix in the CF).md
+    │   ├── Spring Stiffness Matrix in CO.md
+    │   ├── Inertial Matrix (hull and payload) in CO.md
+    │   └── CG corrected for payload (m).md
+    ├── output_processing/             # 输出后处理
+    │   ├── Overview_output_processing.md
+    │   ├── CourseAngle.md             # 航向角计算
+    │   └── SpeedNorm.md               # 航速计算
+    ├── sum_of_forces_and_moments/     # 力和力矩求和
+    │   └── Overview_sum_of_forces_and_moments.md
+    ├── thrust/                        # 推进力
+    │   └── Overview_thrust.md
+    └── waves_and_crossflow/           # 波浪与横流
+        └── Overview_waves_and_crossflow.md
+```
+
 ## 模块功能概述
 
 "Subsystem (SID 748)"模块代表整个船舶系统的物理仿真模型，包含环境影响、载荷影响以及船体动力学三大部分。该子系统综合了环境参数（如重力、水流）、载荷参数（如载荷质量、重心偏移）对船体运动的影响，并通过内部的船体平台模块计算船只在6自由度下的运动响应。
