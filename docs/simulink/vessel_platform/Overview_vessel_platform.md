@@ -1,4 +1,23 @@
-# ASV船体模型Simulink模块输入分析
+# Vessel Platform 船舶平台模块
+
+## 模块概述
+
+Vessel Platform是船舶动力学仿真的核心模块，包含完整的船舶运动学和动力学模型。该模块接收控制命令和环境参数，输出船舶的六自由度运动状态。
+
+## 子模块导航
+
+| 子模块 | 说明 | 文档链接 |
+|--------|------|----------|
+| Input Processing | 输入处理和参数预处理 | [input_processing/](input_processing/) |
+| Thrust | 推进器推力计算 | [thrust/](thrust/) |
+| Waves and Crossflow | 波浪和横流力计算 | [waves_and_crossflow/](waves_and_crossflow/) |
+| Hydrodynamics | 水动力计算(阻尼、科氏力等) | [hydrodynamics/](hydrodynamics/) |
+| Hydrostatic | 静水恢复力计算 | [hydrostatic/](hydrostatic/) |
+| Sum of Forces and Moments | 力和力矩求和 | [sum_of_forces_and_moments/](sum_of_forces_and_moments/) |
+| 6DOF | 六自由度运动积分 | [6dof/](6dof/) |
+| Output Processing | 输出处理和状态整形 | [output_processing/](output_processing/) |
+
+## 模块架构图
 
 <div align="center">
 
@@ -6,13 +25,46 @@
 
 </div>
 
-## 提问
+## 数据流概览
 
-这是simulink中的一个ASV（自主无人船）的船体模型部分，要求你分析一下图中每一个模块的输入的含义
+```
+                    ┌─────────────────┐
+VesselCommand ─────→│                 │
+Payload ───────────→│ Input Processing│──→ νr, Inertials, H, MA, G, ω, T
+Environment ───────→│                 │
+State [X] ─────────→└─────────────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        ↓                     ↓                     ↓
+   ┌─────────┐        ┌────────────────┐    ┌──────────────┐
+   │ Thrust  │        │ Waves and      │    │ Hydrodynamics│
+   │         │        │ Crossflow      │    │              │
+   └────┬────┘        └───────┬────────┘    └──────┬───────┘
+        │                     │                    │
+        │                     │                    │
+        │    ┌────────────────┼────────────────────┤
+        │    │                │                    │
+        │    │         ┌──────┴──────┐            │
+        │    │         │ Hydrostatic │            │
+        │    │         └──────┬──────┘            │
+        │    │                │                   │
+        ↓    ↓                ↓                   ↓
+   ┌──────────────────────────────────────────────────┐
+   │          Sum of Forces and Moments               │
+   └─────────────────────────┬────────────────────────┘
+                             ↓
+                    ┌─────────────────┐
+                    │   6DOF (In CO)  │
+                    └────────┬────────┘
+                             ↓
+                    ┌─────────────────┐
+                    │Output Processing│──→ VesselStates
+                    └─────────────────┘
+```
 
-## 回答
+## 各模块输入输出说明
 
-下面按信号流从左到右，逐块说明各模块的输入含义（中文版）。
+下面按信号流从左到右，逐块说明各模块的输入含义。
 
 ---
 
