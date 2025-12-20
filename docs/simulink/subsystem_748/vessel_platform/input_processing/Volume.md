@@ -1,16 +1,62 @@
+# Volume 排水体积模块分析
+
+## 模块功能说明
+
+**Volume** 模块基于阿基米德原理，计算整船系统（船体+载荷）在静水平衡时的排水体积 $\nabla$。
+
+## 输入输出端口
+
+### 输入
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $m_p$ | mp (Payload Mass) | 载荷质量 | kg |
+| 2 | $\rho$ | rho (Water Density) | 水密度 | kg/m³ |
+
+内部使用的常量：
+
+| 常量名 | Simulink变量名 | 说明 |
+|--------|----------------|------|
+| $m$ | mass (kg)（值=m） | 船体质量 |
+
+### 输出
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $\nabla$ | Volume (m3) | 排水体积 | m³ |
+
+## Simulink变量对应关系表
+
+| 物理量符号 | Simulink变量名 | 计算公式/来源 | 说明 |
+|------------|----------------|---------------|------|
+| $m$ | mass (kg) | Constant块 | 船体质量 |
+| $m_p$ | mp | 输入端口1 | 载荷质量 |
+| $\rho$ | rho | 输入端口2 | 水密度 |
+| $m + m_p$ | Add输出 | $m + m_p$ | 总质量 |
+| $\nabla$ | Divide输出 / Volume (m3) | $(m + m_p) / \rho$ | 排水体积 |
+
+## 核心计算公式
+
+$$
+\boxed{
+\nabla = \frac{m + m_p}{\rho}
+}
+$$
+
+此公式来源于阿基米德原理（静水平衡条件）：浮力 = 重力
+$$\rho g \nabla = (m + m_p) g$$
+
+---
+
+## 详细说明
+
 <div align="center">
 <img width="1344" height="146" alt="image" src="https://github.com/user-attachments/assets/2e8fabac-9bde-4e54-afb1-4ee0f48879f1" />
 </div>
 
-这是input processing 模块中Volume子模块,输出的是nabla,单位是m^3
-
 <div align="center">
 <img width="687" height="258" alt="image" src="https://github.com/user-attachments/assets/b8df84c5-542e-47d2-9cf1-69fd8c477a86" />
 </div>
-
-这是内部的Simulink构造,分析计算表达式和Simulink的构造机理。
-
-# 回答
 好,这个 **Volume 子模块**其实比 CG 模块还"基础",它做的是**严格的静水学第一性原理计算**。我按你给的截图,**从 Simulink 连线 → 数学表达式 → 物理含义 → 在整船模型中的作用**四层来拆。
 
 ---

@@ -1,4 +1,56 @@
-# 提问
+# CG corrected for payload 载荷修正重心模块分析
+
+## 模块功能说明
+
+**CG corrected for payload** 模块计算船体与载荷整体系统的质心位置 $r_g$。这是后续惯性矩阵、恢复力矩阵等计算的基础。
+
+## 输入输出端口
+
+### 输入
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $m_p$ | mp | 载荷质量 | kg |
+| 2 | $r_p$ | rp | 载荷在CO坐标系下的位置向量 | m |
+
+内部使用的常量：
+
+| 常量名 | Simulink变量名 | 说明 |
+|--------|----------------|------|
+| $m$ | mass (kg)（值=m） | 船体质量 |
+| $r_{g,hull}$ | CG hull only (m)（值=rg） | 船体（裸船）质心位置 |
+
+### 输出
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $r_g$ | CG corrected for payload (m) | 修正后的整体质心位置向量 | m |
+
+## Simulink变量对应关系表
+
+| 物理量符号 | Simulink变量名 | 数据来源/计算 | 说明 |
+|------------|----------------|---------------|------|
+| $m$ | mass (kg) | Constant块 | 船体质量 |
+| $m_p$ | mp | 输入端口1 | 载荷质量 |
+| $r_{g,hull}$ | CG hull only (m) | Constant块 | 船体质心 |
+| $r_p$ | rp | 输入端口2 | 载荷位置 |
+| $m \cdot r_{g,hull}$ | Product输出 | $m \times r_{g,hull}$ | 船体一阶矩 |
+| $m_p \cdot r_p$ | Product1输出 | $m_p \times r_p$ | 载荷一阶矩 |
+| $m + m_p$ | Add2输出 | 总质量 | 分母 |
+| $m \cdot r_{g,hull} + m_p \cdot r_p$ | Add1输出 | 总一阶矩 | 分子 |
+| $r_g$ | Divide1输出 | 质心公式结果 | 最终输出 |
+
+## 核心计算公式
+
+$$
+\boxed{
+\mathbf{r}_g = \frac{m \cdot \mathbf{r}_{g,\text{hull}} + m_p \cdot \mathbf{r}_p}{m + m_p}
+}
+$$
+
+---
+
+# 详细说明
 
 <p align="center">
 <img width="1545" height="152" alt="image" src="https://github.com/user-attachments/assets/c246801b-1c43-4e3c-86f0-8889fb7193fe" />
@@ -7,10 +59,6 @@
 <p align="center">
 <img width="922" height="340" alt="image" src="https://github.com/user-attachments/assets/80c8c524-db03-4c59-99f6-42d880645f3b" />
 </p>
-
-这是input processing模块中CG corrected for payload (m)这个子模块，输出的物理量就是CG corrected for payload (m)，也是rg。 告诉我rg的计算机理
-
-# 回答
 
 很好，这个子模块其实**非常"干净"**，它在 Simulink 里做的事情与经典力学中的**质心合成公式**完全一致，没有任何经验项或隐藏假设。下面我按**物理 → 数学 → Simulink 结构逐一对齐**来说明。
 
