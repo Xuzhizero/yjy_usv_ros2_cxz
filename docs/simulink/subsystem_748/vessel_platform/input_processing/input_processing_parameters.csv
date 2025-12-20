@@ -1,0 +1,1165 @@
+
+BlockPath,BlockType,ParamContext,ParamName,ParamValue
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),Inport,,Position,"[110, 123, 140, 137]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),Inport,,ZOrder,-1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),Inport,PortProperties/Port[out:1],Name,mp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),Inport,PortProperties/Port[out:1],PropagatedSignals,Payload mass (kg)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),Inport,,Position,"[110, 263, 140, 277]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),Inport,,ZOrder,1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),Inport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),Inport,PortProperties/Port[out:1],Name,rp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),Inport,PortProperties/Port[out:1],PropagatedSignals,Location of payload (m)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Gravity (m/s2),Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Gravity (m/s2),Inport,,Position,"[110, 973, 140, 987]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Gravity (m/s2),Inport,,ZOrder,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Gravity (m/s2),Inport,,Port,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Gravity (m/s2),Inport,PortProperties/Port[out:1],Name,g
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Gravity (m/s2),Inport,PortProperties/Port[out:1],PropagatedSignals,Gravity (m/s2)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),Inport,,Position,"[110, 158, 140, 172]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),Inport,,ZOrder,7
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),Inport,,Port,4
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),Inport,PortProperties/Port[out:1],Name,rho
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),Inport,PortProperties/Port[out:1],PropagatedSignals,Water Density (kg/m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Speed (m/s),Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Speed (m/s),Inport,,Position,"[110, -12, 140, 2]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Speed (m/s),Inport,,ZOrder,416
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Speed (m/s),Inport,,Port,5
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Speed (m/s),Inport,PortProperties/Port[out:1],PropagatedSignals,Current speed (m/s)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Direction (rad),Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Direction (rad),Inport,,Position,"[110, 23, 140, 37]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Direction (rad),Inport,,ZOrder,415
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Direction (rad),Inport,,Port,6
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Current Direction (rad),Inport,PortProperties/Port[out:1],PropagatedSignals,Current direction (rad)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/X,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/X,Inport,,Position,"[110, 58, 140, 72]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/X,Inport,,ZOrder,420
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/X,Inport,,Port,7
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,Block,BlockType,InportShadow
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,,Position,"[110, 758, 140, 772]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,,ZOrder,552
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,PortProperties/Port[out:1],Name,mp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,PortProperties/Port[out:1],PropagatedSignals,Payload mass (kg)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,Block,BlockType,InportShadow
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,,Position,"[110, 423, 140, 437]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,,ZOrder,340
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,PortProperties/Port[out:1],Name,mp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,PortProperties/Port[out:1],PropagatedSignals,Payload mass (kg)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/mass (kg),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/mass (kg),Constant,,Position,"[870, 597, 915, 613]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/mass (kg),Constant,,ZOrder,547
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/mass (kg),Constant,,Value,m
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/mass (kg),Constant,PortProperties/Port[out:1],Name,m
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Add5,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Add5,Sum,,Position,"[870, 427, 890, 503]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Add5,Sum,,ZOrder,429
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Add5,Sum,,IconShape,rectangular
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Add5,Sum,PortProperties/Port[out:1],Name,M in CO
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics),SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics),SubSystem,,Position,"[470, 685, 765, 725]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics),SubSystem,,ZOrder,456
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics),SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics),SubSystem,PortProperties/Port[out:1],Name,MA
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Inertial Matrix (hull and payload) in CO,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Inertial Matrix (hull and payload) in CO,Inport,,Position,"[-210, 138, -180, 152]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Inertial Matrix (hull and payload) in CO,Inport,,ZOrder,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Inertial Matrix (hull and payload) in CO,Inport,PortProperties/Port[out:1],Name,Ig
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Inertial Matrix (hull and payload) in CO,Inport,PortProperties/Port[out:1],PropagatedSignals,Ig
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Create Diagonal Matrix,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Create Diagonal Matrix,Reference,,Position,"[140, 99, 230, 151]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Create Diagonal Matrix,Reference,,ZOrder,360
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Create Diagonal Matrix,Reference,,LibraryVersion,9.1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Create Diagonal Matrix,Reference,,SourceBlock,"matrix_library/Create Diagonal
+Matrix"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Create Diagonal Matrix,Reference,,SourceType,Create Diagonal Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Create Diagonal Matrix,Reference,InstanceData,MultithreadedSim,auto
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain,Gain,,Position,"[5, 10, 50, 40]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain,Gain,,ZOrder,11
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain,Gain,,Gain,-0.1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain,Gain,PortProperties/Port[out:1],Name,Xudot
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain1,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain1,Gain,,Position,"[265, 110, 295, 140]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain1,Gain,,ZOrder,361
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain1,Gain,,Gain,-1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain2,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain2,Gain,,Position,"[5, 50, 50, 80]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain2,Gain,,ZOrder,363
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain2,Gain,,Gain,-1.5
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain2,Gain,PortProperties/Port[out:1],Name,Yvdot
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain3,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain3,Gain,,Position,"[5, 90, 50, 120]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain3,Gain,,ZOrder,364
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain3,Gain,,Gain,-1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain3,Gain,PortProperties/Port[out:1],Name,Zwdot
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain4,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain4,Gain,,Position,"[5, 130, 50, 160]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain4,Gain,,ZOrder,365
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain4,Gain,,Gain,-0.2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain4,Gain,PortProperties/Port[out:1],Name,Kpdot
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain5,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain5,Gain,,Position,"[5, 170, 50, 200]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain5,Gain,,ZOrder,366
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain5,Gain,,Gain,-0.8
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain5,Gain,PortProperties/Port[out:1],Name,Mqdot
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain6,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain6,Gain,,Position,"[5, 210, 50, 240]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain6,Gain,,ZOrder,367
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain6,Gain,,Gain,-1.7
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain6,Gain,PortProperties/Port[out:1],Name,Nrdot
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Mux,Mux,Block,BlockType,Mux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Mux,Mux,,Position,"[100, 8, 105, 242]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Mux,Mux,,ZOrder,362
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Mux,Mux,,Inputs,6
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Mux,Mux,,DisplayOption,bar
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector,Selector,Block,BlockType,Selector
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector,Selector,,Position,"[-55, 136, -15, 154]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector,Selector,,ZOrder,368
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector,Selector,,NumberOfDimensions,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector,Selector,,InputPortWidth,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector,Selector,,IndexOptions,"Index vector (dialog),Index vector (dialog)"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector,Selector,,Indices,"1,1"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector,Selector,,OutputSizes,"1,1"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector1,Selector,Block,BlockType,Selector
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector1,Selector,,Position,"[-55, 176, -15, 194]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector1,Selector,,ZOrder,369
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector1,Selector,,NumberOfDimensions,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector1,Selector,,InputPortWidth,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector1,Selector,,IndexOptions,"Index vector (dialog),Index vector (dialog)"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector1,Selector,,Indices,"2,2"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector1,Selector,,OutputSizes,"1,1"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector2,Selector,Block,BlockType,Selector
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector2,Selector,,Position,"[-55, 216, -15, 234]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector2,Selector,,ZOrder,370
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector2,Selector,,NumberOfDimensions,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector2,Selector,,InputPortWidth,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector2,Selector,,IndexOptions,"Index vector (dialog),Index vector (dialog)"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector2,Selector,,Indices,"3,3"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Selector2,Selector,,OutputSizes,"1,1"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/mass (kg),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/mass (kg),Constant,,Position,"[-105, 17, -60, 33]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/mass (kg),Constant,,ZOrder,10
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/mass (kg),Constant,,Value,m
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Added Mass (Hydrodynamcis),Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Added Mass (Hydrodynamcis),Outport,,Position,"[350, 118, 380, 132]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Added Mass (Hydrodynamcis),Outport,,ZOrder,-2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Bus Creator,BusCreator,Block,BlockType,BusCreator
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Bus Creator,BusCreator,,Position,"[965, 496, 970, 669]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Bus Creator,BusCreator,,ZOrder,431
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Bus Creator,BusCreator,,Inputs,4
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Bus Creator,BusCreator,,DisplayOption,bar
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Bus Creator,BusCreator,,InheritFromInputs,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload,SubSystem,,Position,"[470, 212, 665, 288]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload,SubSystem,,ZOrder,556
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload,SubSystem,PortProperties/Port[out:1],Name,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/mp,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/mp,Inport,,Position,"[20, 108, 50, 122]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/mp,Inport,,ZOrder,18
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/mp,Inport,PortProperties/Port[out:1],PropagatedSignals,mp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/rp,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/rp,Inport,,Position,"[20, 138, 50, 152]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/rp,Inport,,ZOrder,19
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/rp,Inport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/rp,Inport,PortProperties/Port[out:1],PropagatedSignals,rp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Add1,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Add1,Sum,,Position,"[250, 37, 270, 113]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Add1,Sum,,ZOrder,11
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Add1,Sum,,IconShape,rectangular
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Add2,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Add2,Sum,,Position,"[320, 112, 340, 188]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Add2,Sum,,ZOrder,16
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Add2,Sum,,IconShape,rectangular
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/CG hull only (m),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/CG hull only (m),Constant,,Position,"[100, 62, 145, 78]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/CG hull only (m),Constant,,ZOrder,14
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/CG hull only (m),Constant,,Value,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Divide1,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Divide1,Product,,Position,"[375, 62, 395, 113]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Divide1,Product,,ZOrder,15
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Divide1,Product,,Inputs,*/
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Divide1,Product,PortProperties/Port[out:1],Name,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Product,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Product,Product,,Position,"[180, 24, 200, 86]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Product,Product,,ZOrder,10
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Product1,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Product1,Product,,Position,"[180, 99, 200, 161]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/Product1,Product,,ZOrder,13
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/mass (kg),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/mass (kg),Constant,,Position,"[100, 32, 145, 48]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/mass (kg),Constant,,ZOrder,9
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/mass (kg),Constant,,Value,m
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/CG corrected for payload (m),Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/CG corrected for payload (m),Outport,,Position,"[510, 83, 540, 97]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload/CG corrected for payload (m),Outport,,ZOrder,20
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Constant3,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Constant3,Constant,,Position,"[315, 825, 380, 845]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Constant3,Constant,,ZOrder,477
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Constant3,Constant,,Value,LCF
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Constant4,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Constant4,Constant,,Position,"[315, 855, 380, 875]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Constant4,Constant,,ZOrder,479
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Constant4,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),SubSystem,,Position,"[470, 1245, 665, 1305]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),SubSystem,,ZOrder,567
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),SubSystem,PortProperties/Port[out:1],Name,Draft (m)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),SubSystem,PortProperties/Port[out:1],PropagatedSignals,draft
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/nabla,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/nabla,Inport,,Position,"[20, 38, 50, 52]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/nabla,Inport,,ZOrder,524
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/nabla,Inport,PortProperties/Port[out:1],PropagatedSignals,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Constant6,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Constant6,Constant,,Position,"[80, 67, 125, 83]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Constant6,Constant,,ZOrder,523
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Constant6,Constant,,Value,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Divide7,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Divide7,Product,,Position,"[160, 23, 185, 187]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Divide7,Product,,ZOrder,519
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Divide7,Product,,Inputs,*////
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Divide7,Product,PortProperties/Port[out:1],Name,draft
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/beam pontoon (m),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/beam pontoon (m),Constant,,Position,"[80, 127, 125, 143]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/beam pontoon (m),Constant,,ZOrder,520
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/beam pontoon (m),Constant,,Value,B_pont
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/block coefficient,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/block coefficient,Constant,,Position,"[80, 97, 125, 113]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/block coefficient,Constant,,ZOrder,522
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/block coefficient,Constant,,Value,Cb_pont
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/length (m),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/length (m),Constant,,Position,"[80, 157, 125, 173]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/length (m),Constant,,ZOrder,521
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/length (m),Constant,,Value,L
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/T,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/T,Outport,,Position,"[245, 98, 275, 112]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/T,Outport,,ZOrder,525
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From,From,,Position,"[80, 1137, 170, 1153]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From,From,,ZOrder,466
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From,From,,GotoTag,G33
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From1,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From1,From,,Position,"[80, 1157, 170, 1173]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From1,From,,ZOrder,471
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From1,From,,GotoTag,G44
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From11,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From11,From,,Position,"[80, 1082, 170, 1098]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From11,From,,ZOrder,571
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From11,From,,GotoTag,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From11,From,PortProperties/Port[out:1],Name,CG corrected for payload (m)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From11,From,PortProperties/Port[out:1],PropagatedSignals,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From15,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From15,From,,Position,"[250, 337, 340, 353]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From15,From,,ZOrder,558
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From15,From,,GotoTag,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From15,From,PortProperties/Port[out:1],PropagatedSignals,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From2,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From2,From,,Position,"[80, 1177, 170, 1193]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From2,From,,ZOrder,474
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From2,From,,GotoTag,G55
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From21,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From21,From,,Position,"[315, 1007, 405, 1023]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From21,From,,ZOrder,459
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From21,From,,GotoTag,nabla
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From21,From,PortProperties/Port[out:1],Name,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From21,From,PortProperties/Port[out:1],PropagatedSignals,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From3,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From3,From,,Position,"[80, 1197, 170, 1213]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From3,From,,ZOrder,489
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From3,From,,GotoTag,M
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From3,From,PortProperties/Port[out:1],PropagatedSignals,M in CO
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From6,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From6,From,,Position,"[80, 1057, 170, 1073]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From6,From,,ZOrder,569
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From6,From,,GotoTag,nabla
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From6,From,PortProperties/Port[out:1],Name,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From6,From,PortProperties/Port[out:1],PropagatedSignals,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From8,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From8,From,,Position,"[80, 1032, 170, 1048]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From8,From,,ZOrder,570
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From8,From,,GotoTag,T
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From8,From,PortProperties/Port[out:1],Name,Draft (m)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From8,From,PortProperties/Port[out:1],PropagatedSignals,Draft (m)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From9,From,Block,BlockType,From
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From9,From,,Position,"[80, 1267, 170, 1283]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From9,From,,ZOrder,518
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From9,From,,GotoTag,nabla
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From9,From,PortProperties/Port[out:1],Name,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/From9,From,PortProperties/Port[out:1],PropagatedSignals,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM,SubSystem,,Position,"[315, 1028, 385, 1102]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM,SubSystem,,ZOrder,574
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM,SubSystem,PortProperties/Port[out:1],PropagatedSignals,GM_T
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM,SubSystem,PortProperties/Port[out:2],PropagatedSignals,GM_L
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/T,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/T,Inport,,Position,"[20, 28, 50, 42]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/T,Inport,,ZOrder,539
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/T,Inport,PortProperties/Port[out:1],PropagatedSignals,Draft (m)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/nabla,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/nabla,Inport,,Position,"[20, 78, 50, 92]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/nabla,Inport,,ZOrder,540
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/nabla,Inport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/nabla,Inport,PortProperties/Port[out:1],PropagatedSignals,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/rg,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/rg,Inport,,Position,"[20, 523, 50, 537]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/rg,Inport,,ZOrder,541
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/rg,Inport,,Port,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/rg,Inport,PortProperties/Port[out:1],PropagatedSignals,CG corrected for payload (m)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Constant7,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Constant7,Constant,,Position,"[155, 232, 200, 248]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Constant7,Constant,,ZOrder,524
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Constant7,Constant,,Value,I_T
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Constant8,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Constant8,Constant,,Position,"[155, 332, 200, 348]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Constant8,Constant,,ZOrder,527
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Constant8,Constant,,Value,I_L
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide5,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide5,Product,,Position,"[240, 68, 265, 172]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide5,Product,,ZOrder,506
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide5,Product,,Inputs,*//
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide6,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide6,Product,,Position,"[240, 220, 265, 300]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide6,Product,,ZOrder,525
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide6,Product,,Inputs,*/
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide6,Product,PortProperties/Port[out:1],Name,BM_T
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide8,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide8,Product,,Position,"[240, 320, 265, 400]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide8,Product,,ZOrder,528
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide8,Product,,Inputs,*/
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Divide8,Product,PortProperties/Port[out:1],Name,BM_L
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain5,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain5,Gain,,Position,"[350, 20, 380, 50]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain5,Gain,,ZOrder,504
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain5,Gain,,Gain,1/3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain5,Gain,PortProperties/Port[out:1],Name,KB
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain6,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain6,Gain,,Position,"[160, 70, 190, 100]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain6,Gain,,ZOrder,505
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain6,Gain,,Gain,0.5
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain7,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain7,Gain,,Position,"[160, 20, 190, 50]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain7,Gain,,ZOrder,517
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Gain7,Gain,,Gain,5/2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Selector3,Selector,Block,BlockType,Selector
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Selector3,Selector,,Position,"[160, 511, 200, 549]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Selector3,Selector,,ZOrder,534
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Selector3,Selector,,InputPortWidth,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Selector3,Selector,,IndexOptions,Index vector (dialog)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Selector3,Selector,,Indices,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Selector3,Selector,,OutputSizes,1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum,Sum,,Position,"[300, 25, 320, 45]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum,Sum,,ZOrder,511
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum,Sum,,Inputs,|+-
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum1,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum1,Sum,,Position,"[430, 250, 450, 270]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum1,Sum,,ZOrder,530
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum1,Sum,,Inputs,++|
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum1,Sum,PortProperties/Port[out:1],Name,KM_T
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum2,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum2,Sum,,Position,"[465, 350, 485, 370]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum2,Sum,,ZOrder,531
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum2,Sum,,Inputs,++|
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum2,Sum,PortProperties/Port[out:1],Name,KM_L
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum3,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum3,Sum,,Position,"[245, 470, 265, 490]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum3,Sum,,ZOrder,535
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum3,Sum,,Inputs,|+-
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum3,Sum,PortProperties/Port[out:1],Name,KG
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum4,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum4,Sum,,Position,"[550, 250, 570, 270]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum4,Sum,,ZOrder,537
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum4,Sum,,Inputs,|+-
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum4,Sum,PortProperties/Port[out:1],Name,GM_T
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum5,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum5,Sum,,Position,"[605, 350, 625, 370]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum5,Sum,,ZOrder,538
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum5,Sum,,Inputs,|+-
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum5,Sum,PortProperties/Port[out:1],Name,GM_L
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/beam pontoon (m),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/beam pontoon (m),Constant,,Position,"[155, 147, 200, 163]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/beam pontoon (m),Constant,,ZOrder,510
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/beam pontoon (m),Constant,,Value,B_pont
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/length (m),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/length (m),Constant,,Position,"[155, 112, 200, 128]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/length (m),Constant,,ZOrder,509
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/length (m),Constant,,Value,L
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/GM_T,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/GM_T,Outport,,Position,"[705, 253, 735, 267]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/GM_T,Outport,,ZOrder,542
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/GM_L,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/GM_L,Outport,,Position,"[705, 353, 735, 367]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/GM_L,Outport,,ZOrder,543
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/GM_L,Outport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF),SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF),SubSystem,,Position,"[470, 929, 665, 1101]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF),SubSystem,,ZOrder,560
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF),SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF),SubSystem,PortProperties/Port[out:1],PropagatedSignals,G_CF (spring stiffness matrix in the CF)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/rho,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/rho,Inport,,Position,"[40, 103, 70, 117]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/rho,Inport,,ZOrder,554
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/rho,Inport,PortProperties/Port[out:1],PropagatedSignals,rho
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/g,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/g,Inport,,Position,"[40, 143, 70, 157]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/g,Inport,,ZOrder,555
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/g,Inport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/g,Inport,PortProperties/Port[out:1],PropagatedSignals,g
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/nabla,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/nabla,Inport,,Position,"[40, 213, 70, 227]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/nabla,Inport,,ZOrder,556
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/nabla,Inport,,Port,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/nabla,Inport,PortProperties/Port[out:1],PropagatedSignals,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_T,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_T,Inport,,Position,"[355, 178, 385, 192]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_T,Inport,,ZOrder,561
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_T,Inport,,Port,4
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_T,Inport,PortProperties/Port[out:1],PropagatedSignals,GM_T
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_L,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_L,Inport,,Position,"[355, 223, 385, 237]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_L,Inport,,ZOrder,562
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_L,Inport,,Port,5
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/GM_L,Inport,PortProperties/Port[out:1],PropagatedSignals,GM_L
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Constant,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Constant,Constant,,Position,"[580, 32, 610, 48]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Constant,Constant,,ZOrder,553
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Constant,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Create Diagonal Matrix,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Create Diagonal Matrix,Reference,,Position,"[710, 129, 800, 181]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Create Diagonal Matrix,Reference,,ZOrder,475
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Create Diagonal Matrix,Reference,,LibraryVersion,9.1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Create Diagonal Matrix,Reference,,SourceBlock,"matrix_library/Create Diagonal
+Matrix"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Create Diagonal Matrix,Reference,,SourceType,Create Diagonal Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Create Diagonal Matrix,Reference,InstanceData,MultithreadedSim,auto
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Create Diagonal Matrix,Reference,PortProperties/Port[out:1],Name,G_CF (spring stiffness matrix in the CF)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Gain2,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Gain2,Gain,,Position,"[305, 112, 395, 148]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Gain2,Gain,,ZOrder,464
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Gain2,Gain,,Gain,2 * Aw_pont
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Mux,Mux,Block,BlockType,Mux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Mux,Mux,,Position,"[660, 20, 665, 285]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Mux,Mux,,ZOrder,476
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Mux,Mux,,Inputs,6
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Mux,Mux,,DisplayOption,bar
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product10,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product10,Product,,Position,"[415, 200, 445, 240]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product10,Product,,ZOrder,546
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product6,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product6,Product,,Position,"[140, 91, 170, 169]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product6,Product,,ZOrder,463
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product7,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product7,Product,,Position,"[235, 191, 265, 229]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product7,Product,,ZOrder,467
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product9,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product9,Product,,Position,"[415, 155, 445, 195]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/Product9,Product,,ZOrder,545
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G_CF,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G_CF,Outport,,Position,"[1015, 148, 1045, 162]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G_CF,Outport,,ZOrder,557
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G33,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G33,Outport,,Position,"[570, 138, 600, 152]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G33,Outport,,ZOrder,558
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G33,Outport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G44,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G44,Outport,,Position,"[570, 183, 600, 197]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G44,Outport,,ZOrder,559
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G44,Outport,,Port,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G55,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G55,Outport,,Position,"[570, 228, 600, 242]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G55,Outport,,ZOrder,560
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/G_CF (spring stiffness matrix in the CF)/G55,Outport,,Port,4
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto1,Goto,Block,BlockType,Goto
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto1,Goto,,Position,"[700, 987, 790, 1003]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto1,Goto,,ZOrder,561
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto1,Goto,,GotoTag,G33
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto2,Goto,Block,BlockType,Goto
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto2,Goto,,Position,"[700, 1032, 790, 1048]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto2,Goto,,ZOrder,562
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto2,Goto,,GotoTag,G44
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto3,Goto,Block,BlockType,Goto
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto3,Goto,,Position,"[825, 142, 915, 158]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto3,Goto,,ZOrder,460
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto3,Goto,,GotoTag,nabla
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto4,Goto,Block,BlockType,Goto
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto4,Goto,,Position,"[700, 1077, 790, 1093]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto4,Goto,,ZOrder,563
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto4,Goto,,GotoTag,G55
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto5,Goto,Block,BlockType,Goto
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto5,Goto,,Position,"[935, 457, 1025, 473]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto5,Goto,,ZOrder,488
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto5,Goto,,GotoTag,M
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto6,Goto,Block,BlockType,Goto
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto6,Goto,,Position,"[860, 1292, 950, 1308]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto6,Goto,,ZOrder,516
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto6,Goto,,GotoTag,T
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto7,Goto,Block,BlockType,Goto
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto7,Goto,,Position,"[825, 267, 915, 283]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto7,Goto,,ZOrder,532
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Goto7,Goto,,GotoTag,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO,SubSystem,,Position,"[210, 720, 380, 780]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO,SubSystem,,ZOrder,559
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO,SubSystem,PortProperties/Port[out:1],PropagatedSignals,Ig
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/rp,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/rp,Inport,,Position,"[20, 183, 50, 197]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/rp,Inport,,ZOrder,552
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/rp,Inport,PortProperties/Port[out:1],PropagatedSignals,rp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/mp,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/mp,Inport,,Position,"[20, 228, 50, 242]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/mp,Inport,,ZOrder,553
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/mp,Inport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/mp,Inport,PortProperties/Port[out:1],PropagatedSignals,mp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Add3,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Add3,Sum,,Position,"[390, 21, 410, 259]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Add3,Sum,,ZOrder,180
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Add3,Sum,,IconShape,rectangular
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Add3,Sum,,Inputs,+--
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Add3,Sum,PortProperties/Port[out:1],Name,Ig
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/CG hull only (m),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/CG hull only (m),Constant,,Position,"[85, 122, 130, 138]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/CG hull only (m),Constant,,ZOrder,182
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/CG hull only (m),Constant,,Value,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Gain,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Gain,Gain,,Position,"[335, 125, 365, 155]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Gain,Gain,,ZOrder,183
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Gain,Gain,,Gain,m
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Inertial Matrix in CG,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Inertial Matrix in CG,Constant,,Position,"[85, 52, 130, 68]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Inertial Matrix in CG,Constant,,ZOrder,19
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Inertial Matrix in CG,Constant,,Value,Ig_CG
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product11,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product11,Product,,Position,"[335, 184, 350, 251]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product11,Product,,ZOrder,551
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product2,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product2,Product,,Position,"[270, 119, 310, 161]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product2,Product,,ZOrder,181
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product2,Product,,Multiplication,Matrix(*)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product3,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product3,Product,,Position,"[270, 179, 310, 221]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product3,Product,,ZOrder,185
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Product3,Product,,Multiplication,Matrix(*)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx,SubSystem,,Position,"[160, 114, 225, 146]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx,SubSystem,,ZOrder,179
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/a,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/a,Inport,,Position,"[-5, 58, 25, 72]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/a,Inport,,ZOrder,177
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant,Constant,,Position,"[190, 7, 230, 23]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant,Constant,,ZOrder,182
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant1,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant1,Constant,,Position,"[190, 107, 230, 123]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant1,Constant,,ZOrder,187
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant1,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant2,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant2,Constant,,Position,"[190, 207, 230, 223]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant2,Constant,,ZOrder,188
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Constant2,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,,Position,"[270, 2, 325, 228]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,,ZOrder,111
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,,LibraryVersion,13.0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,,SourceBlock,sharedutil/Create 3x3 Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,,SourceType,Create 3x3 Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecFuncInitTerm,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecFuncExecute,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataConstants,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataInternal,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataParameters,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,aMode,aMode
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Demux,Demux,Block,BlockType,Demux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Demux,Demux,,Position,"[120, 28, 125, 102]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Demux,Demux,,ZOrder,184
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Demux,Demux,,Outputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Demux1,Demux,Block,BlockType,Demux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Demux1,Demux,,Position,"[120, 128, 125, 202]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Demux1,Demux,,ZOrder,189
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Demux1,Demux,,Outputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Gain,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Gain,Gain,,Position,"[60, 150, 90, 180]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Gain,Gain,,ZOrder,190
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/Gain,Gain,,Gain,-1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/S,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/S,Outport,,Position,"[360, 108, 390, 122]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx/S,Outport,,ZOrder,181
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1,SubSystem,,Position,"[160, 174, 225, 206]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1,SubSystem,,ZOrder,184
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/a,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/a,Inport,,Position,"[-5, 58, 25, 72]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/a,Inport,,ZOrder,177
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/a,Inport,PortProperties/Port[out:1],PropagatedSignals,rp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant,Constant,,Position,"[190, 7, 230, 23]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant,Constant,,ZOrder,182
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant1,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant1,Constant,,Position,"[190, 107, 230, 123]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant1,Constant,,ZOrder,187
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant1,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant2,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant2,Constant,,Position,"[190, 207, 230, 223]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant2,Constant,,ZOrder,188
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Constant2,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,,Position,"[270, 2, 325, 228]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,,ZOrder,111
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,,LibraryVersion,13.0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,,SourceBlock,sharedutil/Create 3x3 Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,,SourceType,Create 3x3 Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecFuncInitTerm,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecFuncExecute,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataConstants,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataInternal,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataParameters,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,InstanceData,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Create 3x3 Matrix,Reference,InstanceData,aMode,aMode
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Demux,Demux,Block,BlockType,Demux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Demux,Demux,,Position,"[120, 28, 125, 102]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Demux,Demux,,ZOrder,184
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Demux,Demux,,Outputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Demux1,Demux,Block,BlockType,Demux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Demux1,Demux,,Position,"[120, 128, 125, 202]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Demux1,Demux,,ZOrder,189
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Demux1,Demux,,Outputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Gain,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Gain,Gain,,Position,"[60, 150, 90, 180]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Gain,Gain,,ZOrder,190
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/Gain,Gain,,Gain,-1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/S,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/S,Outport,,Position,"[360, 108, 390, 122]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Smtrx1/S,Outport,,ZOrder,181
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Ig,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Ig,Outport,,Position,"[450, 133, 480, 147]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO/Ig,Outport,,ZOrder,554
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG,SubSystem,,Position,"[470, 417, 665, 468]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG,SubSystem,,ZOrder,557
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG,SubSystem,PortProperties/Port[out:1],PropagatedSignals,MRB_CG
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/mp,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/mp,Inport,,Position,"[165, 73, 195, 87]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/mp,Inport,,ZOrder,198
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/mp,Inport,PortProperties/Port[out:1],PropagatedSignals,mp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Ig,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Ig,Inport,,Position,"[165, 233, 195, 247]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Ig,Inport,,ZOrder,199
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Ig,Inport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Ig,Inport,PortProperties/Port[out:1],PropagatedSignals,Ig
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/mass (kg),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/mass (kg),Constant,,Position,"[220, 32, 265, 48]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/mass (kg),Constant,,ZOrder,190
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/mass (kg),Constant,,Value,m
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Add4,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Add4,Sum,,Position,"[300, 22, 320, 98]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Add4,Sum,,ZOrder,191
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Add4,Sum,,IconShape,rectangular
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Constant1,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Constant1,Constant,,Position,"[315, 185, 380, 205]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Constant1,Constant,,ZOrder,193
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Constant1,Constant,,Value,"zeros(3,3)"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Constant2,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Constant2,Constant,,Position,"[255, 110, 320, 130]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Constant2,Constant,,ZOrder,197
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Constant2,Constant,,Value,eye(3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate,Concatenate,Block,BlockType,Concatenate
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate,Concatenate,,Position,"[470, 69, 510, 156]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate,Concatenate,,ZOrder,192
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate,Concatenate,,Mode,Multidimensional array
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate,Concatenate,,ConcatenateDimension,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate1,Concatenate,Block,BlockType,Concatenate
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate1,Concatenate,,Position,"[470, 174, 510, 261]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate1,Concatenate,,ZOrder,194
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate1,Concatenate,,Mode,Multidimensional array
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate1,Concatenate,,ConcatenateDimension,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate2,Concatenate,Block,BlockType,Concatenate
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate2,Concatenate,,Position,"[550, 63, 590, 272]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate2,Concatenate,,ZOrder,195
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate2,Concatenate,,Mode,Multidimensional array
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Matrix Concatenate2,Concatenate,PortProperties/Port[out:1],Name,MRB_CG
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Product4,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Product4,Product,,Position,"[355, 32, 375, 148]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/Product4,Product,,ZOrder,196
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/MRB_CG,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/MRB_CG,Outport,,Position,"[680, 163, 710, 177]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/MRB_CG/MRB_CG,Outport,,ZOrder,200
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Mux1,Mux,Block,BlockType,Mux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Mux1,Mux,,Position,"[415, 818, 420, 912]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Mux1,Mux,,ZOrder,481
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Mux1,Mux,,Inputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Mux1,Mux,,DisplayOption,bar
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies,SubSystem,,Position,"[470, 1133, 665, 1217]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies,SubSystem,,ZOrder,566
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies,SubSystem,PortProperties/Port[out:1],PropagatedSignals,w3 w4 w5
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G33,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G33,Inport,,Position,"[20, 28, 50, 42]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G33,Inport,,ZOrder,498
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G44,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G44,Inport,,Position,"[20, 93, 50, 107]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G44,Inport,,ZOrder,500
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G44,Inport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G55,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G55,Inport,,Position,"[20, 158, 50, 172]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G55,Inport,,ZOrder,502
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/G55,Inport,,Port,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/M,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/M,Inport,,Position,"[20, 58, 50, 72]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/M,Inport,,ZOrder,499
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/M,Inport,,Port,4
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/M,Inport,PortProperties/Port[out:1],PropagatedSignals,M in CO
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide2,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide2,Product,,Position,"[165, 19, 185, 81]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide2,Product,,ZOrder,487
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide2,Product,,Inputs,*/
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide3,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide3,Product,,Position,"[165, 87, 185, 138]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide3,Product,,ZOrder,492
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide3,Product,,Inputs,*/
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide4,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide4,Product,,Position,"[165, 152, 185, 203]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide4,Product,,ZOrder,495
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Divide4,Product,,Inputs,*/
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Mux2,Mux,Block,BlockType,Mux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Mux2,Mux,,Position,"[245, 20, 250, 210]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Mux2,Mux,,ZOrder,497
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Mux2,Mux,,Inputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Mux2,Mux,,DisplayOption,bar
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector,Selector,Block,BlockType,Selector
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector,Selector,,Position,"[90, 56, 130, 74]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector,Selector,,ZOrder,486
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector,Selector,,NumberOfDimensions,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector,Selector,,InputPortWidth,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector,Selector,,IndexOptions,"Index vector (dialog),Index vector (dialog)"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector,Selector,,Indices,"3,3"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector,Selector,,OutputSizes,"1,1"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector1,Selector,Block,BlockType,Selector
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector1,Selector,,Position,"[90, 116, 130, 134]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector1,Selector,,ZOrder,491
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector1,Selector,,NumberOfDimensions,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector1,Selector,,InputPortWidth,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector1,Selector,,IndexOptions,"Index vector (dialog),Index vector (dialog)"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector1,Selector,,Indices,"4,4"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector1,Selector,,OutputSizes,"1,1"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector2,Selector,Block,BlockType,Selector
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector2,Selector,,Position,"[90, 181, 130, 199]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector2,Selector,,ZOrder,494
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector2,Selector,,NumberOfDimensions,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector2,Selector,,InputPortWidth,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector2,Selector,,IndexOptions,"Index vector (dialog),Index vector (dialog)"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector2,Selector,,Indices,"5,5"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Selector2,Selector,,OutputSizes,"1,1"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Sqrt,Sqrt,Block,BlockType,Sqrt
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Sqrt,Sqrt,,Position,"[295, 100, 325, 130]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Sqrt,Sqrt,,ZOrder,490
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/Sqrt,Sqrt,PortProperties/Port[out:1],Name,w3 w4 w5
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/w3 w4 w5,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/w3 w4 w5,Outport,,Position,"[425, 108, 455, 122]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies/w3 w4 w5,Outport,,ZOrder,504
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),InportShadow,Block,BlockType,InportShadow
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),InportShadow,,Position,"[110, 728, 140, 742]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),InportShadow,,ZOrder,187
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),InportShadow,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),InportShadow,PortProperties/Port[out:1],Name,rp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Location (m),InportShadow,PortProperties/Port[out:1],PropagatedSignals,Location of payload (m)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,Block,BlockType,InportShadow
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,,Position,"[110, 223, 140, 237]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,,ZOrder,12
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,PortProperties/Port[out:1],Name,mp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,PortProperties/Port[out:1],PropagatedSignals,Payload mass (kg)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,Block,BlockType,InportShadow
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,,Position,"[875, 643, 905, 657]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,,ZOrder,550
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,PortProperties/Port[out:1],Name,mp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg),InportShadow,PortProperties/Port[out:1],PropagatedSignals,Payload mass (kg)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product5,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product5,Product,,Position,"[770, 390, 810, 500]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product5,Product,,ZOrder,338
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product5,Product,,Inputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product5,Product,,Multiplication,Matrix(*)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product5,Product,PortProperties/Port[out:1],Name,MRB
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product8,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product8,Product,,Position,"[860, 913, 900, 987]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product8,Product,,ZOrder,484
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product8,Product,,Inputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product8,Product,,Multiplication,Matrix(*)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Product8,Product,PortProperties/Port[out:1],Name,G
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity,SubSystem,,Position,"[470, -22, 665, 82]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity,SubSystem,,ZOrder,417
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/V_c,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/V_c,Inport,,Position,"[75, 128, 105, 142]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/V_c,Inport,,ZOrder,392
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/V_c,Inport,,BackgroundColor,"[0.000000, 1.000000, 0.000000]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/V_c,Inport,PortProperties/Port[out:1],PropagatedSignals,Current speed (m/s)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/beta_c,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/beta_c,Inport,,Position,"[75, 33, 105, 47]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/beta_c,Inport,,ZOrder,390
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/beta_c,Inport,,BackgroundColor,"[0.000000, 1.000000, 0.000000]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/beta_c,Inport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/beta_c,Inport,PortProperties/Port[out:1],PropagatedSignals,Current direction (rad)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/X,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/X,Inport,,Position,"[75, 68, 105, 82]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/X,Inport,,ZOrder,394
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/X,Inport,,Port,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add,Sum,,Position,"[230, 24, 255, 91]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add,Sum,,ZOrder,85
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add,Sum,,IconShape,rectangular
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add,Sum,,Inputs,+-
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add1,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add1,Sum,,Position,"[565, 69, 590, 136]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add1,Sum,,ZOrder,399
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add1,Sum,,IconShape,rectangular
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Add1,Sum,,Inputs,+-
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector,BusSelector,Block,BlockType,BusSelector
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector,BusSelector,,Position,"[145, 56, 150, 94]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector,BusSelector,,ZOrder,395
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector,BusSelector,,OutputSignals,psi_rad
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector,BusSelector,PortProperties/Port[out:1],Name,<psi_rad>
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,Block,BlockType,BusSelector
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,,Position,"[145, -112, 150, 12]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,,ZOrder,397
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,,OutputSignals,"u_mps,v_mps,w_mps,p_rps,q_rps,r_rps"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,PortProperties/Port[out:1],Name,<u_mps>
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,PortProperties/Port[out:2],Name,<v_mps>
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,PortProperties/Port[out:3],Name,<w_mps>
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,PortProperties/Port[out:4],Name,<p_rps>
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,PortProperties/Port[out:5],Name,<q_rps>
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Bus Selector1,BusSelector,PortProperties/Port[out:6],Name,<r_rps>
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Constant,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Constant,Constant,,Position,"[355, 157, 435, 183]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Constant,Constant,,ZOrder,95
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Constant,Constant,,Value,[0 0 0 0]'
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux,Mux,Block,BlockType,Mux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux,Mux,,Position,"[240, -115, 245, 15]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux,Mux,,ZOrder,398
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux,Mux,,Inputs,6
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux,Mux,,DisplayOption,bar
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux3,Mux,Block,BlockType,Mux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux3,Mux,,Position,"[500, 47, 505, 193]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux3,Mux,,ZOrder,389
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux3,Mux,,Inputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Mux3,Mux,,DisplayOption,bar
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Product,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Product,Product,,Position,"[405, 52, 435, 83]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Product,Product,,ZOrder,88
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Product,Product,PortProperties/Port[out:1],Name,u_c_mps
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Product1,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Product1,Product,,Position,"[405, 102, 435, 133]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Product1,Product,,ZOrder,90
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Product1,Product,PortProperties/Port[out:1],Name,v_c_mps
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Trigonometric Function,Trigonometry,Block,BlockType,Trigonometry
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Trigonometric Function,Trigonometry,,Position,"[315, 45, 345, 75]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Trigonometric Function,Trigonometry,,ZOrder,86
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Trigonometric Function,Trigonometry,,Operator,cos
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Trigonometric Function1,Trigonometry,Block,BlockType,Trigonometry
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Trigonometric Function1,Trigonometry,,Position,"[315, 95, 345, 125]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Trigonometric Function1,Trigonometry,,ZOrder,87
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/X1,InportShadow,Block,BlockType,InportShadow
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/X1,InportShadow,,Position,"[75, -57, 105, -43]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/X1,InportShadow,,ZOrder,396
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/X1,InportShadow,,Port,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Relative Velocity,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Relative Velocity,Outport,,Position,"[640, 98, 670, 112]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity/Relative Velocity,Outport,,ZOrder,393
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO,SubSystem,,Position,"[470, 840, 665, 890]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO,SubSystem,,ZOrder,478
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO,SubSystem,PortProperties/Port[out:1],Name,H2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/r,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/r,Inport,,Position,"[-145, -2, -115, 12]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/r,Inport,,ZOrder,200
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant1,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant1,Constant,,Position,"[-65, 55, 0, 75]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant1,Constant,,ZOrder,203
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant1,Constant,,Value,"zeros(3,3)"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant2,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant2,Constant,,Position,"[-65, -50, 0, -30]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant2,Constant,,ZOrder,206
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant2,Constant,,Value,eye(3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant3,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant3,Constant,,Position,"[-65, 100, 0, 120]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant3,Constant,,ZOrder,207
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Constant3,Constant,,Value,eye(3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate,Concatenate,Block,BlockType,Concatenate
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate,Concatenate,,Position,"[90, -61, 130, 26]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate,Concatenate,,ZOrder,202
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate,Concatenate,,Mode,Multidimensional array
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate,Concatenate,,ConcatenateDimension,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate1,Concatenate,Block,BlockType,Concatenate
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate1,Concatenate,,Position,"[90, 44, 130, 131]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate1,Concatenate,,ZOrder,204
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate1,Concatenate,,Mode,Multidimensional array
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate1,Concatenate,,ConcatenateDimension,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate2,Concatenate,Block,BlockType,Concatenate
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate2,Concatenate,,Position,"[170, -67, 210, 142]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate2,Concatenate,,ZOrder,205
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Matrix Concatenate2,Concatenate,,Mode,Multidimensional array
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx,SubSystem,,Position,"[-65, -11, 0, 21]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx,SubSystem,,ZOrder,199
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/a,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/a,Inport,,Position,"[-5, 58, 25, 72]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/a,Inport,,ZOrder,177
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant,Constant,,Position,"[190, 7, 230, 23]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant,Constant,,ZOrder,182
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant1,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant1,Constant,,Position,"[190, 107, 230, 123]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant1,Constant,,ZOrder,187
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant1,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant2,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant2,Constant,,Position,"[190, 207, 230, 223]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant2,Constant,,ZOrder,188
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Constant2,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,,Position,"[270, 2, 325, 228]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,,ZOrder,111
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,,LibraryVersion,13.0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,,SourceBlock,sharedutil/Create 3x3 Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,,SourceType,Create 3x3 Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecFuncInitTerm,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecFuncExecute,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataConstants,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataInternal,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataParameters,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,aMode,aMode
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Demux,Demux,Block,BlockType,Demux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Demux,Demux,,Position,"[120, 28, 125, 102]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Demux,Demux,,ZOrder,184
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Demux,Demux,,Outputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Demux1,Demux,Block,BlockType,Demux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Demux1,Demux,,Position,"[120, 128, 125, 202]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Demux1,Demux,,ZOrder,189
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Demux1,Demux,,Outputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Gain,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Gain,Gain,,Position,"[60, 150, 90, 180]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Gain,Gain,,ZOrder,190
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/Gain,Gain,,Gain,-1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/S,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/S,Outport,,Position,"[360, 108, 390, 122]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Smtrx/S,Outport,,ZOrder,181
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,,Position,"[30, -10, 60, 20]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,,ZOrder,336
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,,LibraryVersion,9.1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,,SourceBlock,matrix_library/Transpose
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,,SourceType,Transpose
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,InstanceData,RTWMemSecFuncInitTerm,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,InstanceData,RTWMemSecFuncExecute,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,InstanceData,RTWMemSecDataConstants,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,InstanceData,RTWMemSecDataInternal,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,InstanceData,RTWMemSecDataParameters,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/Transpose,Reference,InstanceData,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/H,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/H,Outport,,Position,"[250, 33, 280, 47]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CF to CO/H,Outport,,ZOrder,201
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO,SubSystem,,Position,"[470, 320, 665, 370]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO,SubSystem,,ZOrder,201
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/r,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/r,Inport,,Position,"[-145, -2, -115, 12]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/r,Inport,,ZOrder,200
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/r,Inport,PortProperties/Port[out:1],PropagatedSignals,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant1,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant1,Constant,,Position,"[-65, 55, 0, 75]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant1,Constant,,ZOrder,203
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant1,Constant,,Value,"zeros(3,3)"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant2,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant2,Constant,,Position,"[-65, -50, 0, -30]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant2,Constant,,ZOrder,206
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant2,Constant,,Value,eye(3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant3,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant3,Constant,,Position,"[-65, 100, 0, 120]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant3,Constant,,ZOrder,207
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Constant3,Constant,,Value,eye(3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate,Concatenate,Block,BlockType,Concatenate
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate,Concatenate,,Position,"[90, -61, 130, 26]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate,Concatenate,,ZOrder,202
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate,Concatenate,,Mode,Multidimensional array
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate,Concatenate,,ConcatenateDimension,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate1,Concatenate,Block,BlockType,Concatenate
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate1,Concatenate,,Position,"[90, 44, 130, 131]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate1,Concatenate,,ZOrder,204
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate1,Concatenate,,Mode,Multidimensional array
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate1,Concatenate,,ConcatenateDimension,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate2,Concatenate,Block,BlockType,Concatenate
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate2,Concatenate,,Position,"[170, -67, 210, 142]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate2,Concatenate,,ZOrder,205
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Matrix Concatenate2,Concatenate,,Mode,Multidimensional array
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx,SubSystem,,Position,"[-65, -11, 0, 21]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx,SubSystem,,ZOrder,199
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/a,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/a,Inport,,Position,"[-5, 58, 25, 72]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/a,Inport,,ZOrder,177
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/a,Inport,PortProperties/Port[out:1],PropagatedSignals,rg
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant,Constant,,Position,"[190, 7, 230, 23]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant,Constant,,ZOrder,182
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant1,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant1,Constant,,Position,"[190, 107, 230, 123]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant1,Constant,,ZOrder,187
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant1,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant2,Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant2,Constant,,Position,"[190, 207, 230, 223]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant2,Constant,,ZOrder,188
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Constant2,Constant,,Value,0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,,Position,"[270, 2, 325, 228]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,,ZOrder,111
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,,LibraryVersion,13.0
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,,SourceBlock,sharedutil/Create 3x3 Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,,SourceType,Create 3x3 Matrix
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecFuncInitTerm,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecFuncExecute,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataConstants,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataInternal,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,RTWMemSecDataParameters,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Create 3x3 Matrix,Reference,InstanceData,aMode,aMode
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Demux,Demux,Block,BlockType,Demux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Demux,Demux,,Position,"[120, 28, 125, 102]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Demux,Demux,,ZOrder,184
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Demux,Demux,,Outputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Demux1,Demux,Block,BlockType,Demux
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Demux1,Demux,,Position,"[120, 128, 125, 202]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Demux1,Demux,,ZOrder,189
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Demux1,Demux,,Outputs,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Gain,Gain,Block,BlockType,Gain
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Gain,Gain,,Position,"[60, 150, 90, 180]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Gain,Gain,,ZOrder,190
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/Gain,Gain,,Gain,-1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/S,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/S,Outport,,Position,"[360, 108, 390, 122]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Smtrx/S,Outport,,ZOrder,181
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,,Position,"[30, -10, 60, 20]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,,ZOrder,336
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,,LibraryVersion,9.1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,,SourceBlock,matrix_library/Transpose
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,,SourceType,Transpose
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,InstanceData,RTWMemSecFuncInitTerm,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,InstanceData,RTWMemSecFuncExecute,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,InstanceData,RTWMemSecDataConstants,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,InstanceData,RTWMemSecDataInternal,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,InstanceData,RTWMemSecDataParameters,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/Transpose,Reference,InstanceData,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/H,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/H,Outport,,Position,"[250, 33, 280, 47]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO/H,Outport,,ZOrder,201
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,,Position,"[715, 395, 745, 425]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,,ZOrder,337
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,,LibraryVersion,9.1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,,SourceBlock,matrix_library/Transpose
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,,SourceType,Transpose
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,InstanceData,RTWMemSecFuncInitTerm,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,InstanceData,RTWMemSecFuncExecute,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,InstanceData,RTWMemSecDataConstants,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,InstanceData,RTWMemSecDataInternal,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,InstanceData,RTWMemSecDataParameters,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose,Reference,InstanceData,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,Block,BlockType,Reference
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,,Position,"[800, 910, 830, 940]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,,ZOrder,483
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,,LibraryVersion,9.1
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,,SourceBlock,matrix_library/Transpose
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,,SourceType,Transpose
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,InstanceData,RTWMemSecFuncInitTerm,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,InstanceData,RTWMemSecFuncExecute,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,InstanceData,RTWMemSecDataConstants,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,InstanceData,RTWMemSecDataInternal,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,InstanceData,RTWMemSecDataParameters,Inherit from model
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transpose1,Reference,InstanceData,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume,SubSystem,Block,BlockType,SubSystem
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume,SubSystem,,Position,"[470, 110, 665, 185]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume,SubSystem,,ZOrder,555
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume,SubSystem,,ContentPreviewEnabled,on
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume,SubSystem,PortProperties/Port[out:1],Name,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/mp,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/mp,Inport,,Position,"[45, 73, 75, 87]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/mp,Inport,,ZOrder,6
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/mp,Inport,PortProperties/Port[out:1],PropagatedSignals,mp
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/rho,Inport,Block,BlockType,Inport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/rho,Inport,,Position,"[45, 118, 75, 132]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/rho,Inport,,ZOrder,7
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/rho,Inport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/rho,Inport,PortProperties/Port[out:1],PropagatedSignals,rho
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Add,Sum,Block,BlockType,Sum
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Add,Sum,,Position,"[180, 22, 200, 98]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Add,Sum,,ZOrder,4
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Add,Sum,,IconShape,rectangular
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Divide,Product,Block,BlockType,Product
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Divide,Product,,Position,"[250, 27, 270, 158]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Divide,Product,,ZOrder,5
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Divide,Product,,Inputs,*/
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Divide,Product,PortProperties/Port[out:1],Name,Volume (m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/mass (kg),Constant,Block,BlockType,Constant
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/mass (kg),Constant,,Position,"[100, 32, 145, 48]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/mass (kg),Constant,,ZOrder,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/mass (kg),Constant,,Value,m
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Volume (m3),Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Volume (m3),Outport,,Position,"[380, 88, 410, 102]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Volume/Volume (m3),Outport,,ZOrder,8
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),InportShadow,Block,BlockType,InportShadow
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),InportShadow,,Position,"[110, 938, 140, 952]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),InportShadow,,ZOrder,462
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),InportShadow,,Port,4
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),InportShadow,PortProperties/Port[out:1],Name,rho
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Water Density (kg/m3),InportShadow,PortProperties/Port[out:1],PropagatedSignals,Water Density (kg/m3)
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity,Outport,,Position,"[995, 23, 1025, 37]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Relative Velocity,Outport,,ZOrder,421
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload (m),Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload (m),Outport,,Position,"[995, 243, 1025, 257]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload (m),Outport,,ZOrder,8
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/CG corrected for payload (m),Outport,,Port,2
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO,Outport,,Position,"[995, 743, 1025, 757]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO,Outport,,ZOrder,188
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertial Matrix (hull and payload) in CO,Outport,,Port,3
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertials,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertials,Outport,,Position,"[995, 578, 1025, 592]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertials,Outport,,ZOrder,339
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Inertials,Outport,,Port,4
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO,Outport,,Position,"[995, 338, 1025, 352]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO,Outport,,ZOrder,341
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Transform CG to CO,Outport,,Port,5
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamcis),Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamcis),Outport,,Position,"[995, 698, 1025, 712]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamcis),Outport,,ZOrder,458
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamcis),Outport,,Port,6
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Spring Stiffness Matrix in CO,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Spring Stiffness Matrix in CO,Outport,,Position,"[995, 943, 1025, 957]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Spring Stiffness Matrix in CO,Outport,,ZOrder,485
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Spring Stiffness Matrix in CO,Outport,,Port,7
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies,Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies,Outport,,Position,"[995, 1168, 1025, 1182]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies,Outport,,ZOrder,502
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Natural Frequencies,Outport,,Port,8
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),Outport,Block,BlockType,Outport
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),Outport,,Position,"[995, 1268, 1025, 1282]"
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),Outport,,ZOrder,549
+ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m),Outport,,Port,9
