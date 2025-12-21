@@ -198,8 +198,8 @@ $$
 | Gain2 | -1.5 | Yvdot | 横荡附加质量系数 $Y_{\dot{v}}$ |
 | Gain3 | -1.0 | Zwdot | 垂荡附加质量系数 $Z_{\dot{w}}$ |
 | Gain4 | -0.2 | Kpdot | 横摇附加惯量系数 $K_{\dot{p}}$ |
-| Gain5 | -0.2 | Mqdot | 纵摇附加惯量系数 $M_{\dot{q}}$ |
-| Gain6 | -0.1 | Nrdot | 艏摇附加惯量系数 $N_{\dot{r}}$ |
+| Gain5 | -0.8 | Mqdot | 纵摇附加惯量系数 $M_{\dot{q}}$ |
+| Gain6 | -1.7 | Nrdot | 艏摇附加惯量系数 $N_{\dot{r}}$ |
 
 **说明**：附加质量矩阵 $M_A$ 为对角矩阵，各系数乘以船体质量 m 后构成对角元素：
 $$M_A = \text{diag}(-X_{\dot{u}} \cdot m, -Y_{\dot{v}} \cdot m, -Z_{\dot{w}} \cdot m, -K_{\dot{p}} \cdot I_{xx}, -M_{\dot{q}} \cdot I_{yy}, -N_{\dot{r}} \cdot I_{zz})$$

@@ -1,3 +1,52 @@
+# Spring Stiffness Matrix in CO 静水恢复刚度矩阵（CO坐标系）模块分析
+
+## 模块功能说明
+
+**Spring Stiffness Matrix in CO** 是Input Processing模块的第7个输出端口，表示在坐标原点（CO）处定义的静水恢复刚度矩阵$G_{CO}$。该矩阵由G_CF模块计算的浮心处刚度矩阵$G_{CF}$经过坐标变换得到。
+
+## 输入输出端口
+
+### 输入（来自上游模块）
+
+| 来源模块 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|----------|--------|----------------|----------|------|
+| G_CF | $G_{CF}$ | G_CF | 浮心处恢复刚度矩阵（6×6） | N/m, N·m/rad |
+| Transform CF to CO | $H$ | H | 坐标变换矩阵（6×6） | - |
+
+### 输出
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 7 | $G_{CO}$ | Spring Stiffness Matrix in CO | CO处恢复刚度矩阵（6×6） | N/m, N·m/rad |
+
+## Simulink变量对应关系表
+
+| 物理量符号 | Simulink变量名 | 计算公式/来源 | 说明 |
+|------------|----------------|---------------|------|
+| $G_{CF}$ | G_CF | 来自G_CF模块 | 浮心处刚度矩阵 |
+| $H$ | H | 来自Transform CF to CO | 变换矩阵 |
+| $H^T$ | Transpose输出 | $H$的转置 | 转置矩阵 |
+| $H^T \cdot G_{CF}$ | Matrix Multiply输出 | 矩阵乘法 | 中间结果 |
+| $G_{CO}$ | Matrix Multiply1输出 | $H^T \cdot G_{CF} \cdot H$ | 最终输出 |
+
+## 核心计算公式
+
+$$
+\boxed{
+G_{CO} = H^T \cdot G_{CF} \cdot H
+}
+$$
+
+其中变换矩阵$H$的结构为：
+$$H = \begin{pmatrix}
+I_3 & 0_{3\times3} \\
+S(\mathbf{r}_{CF}) & I_3
+\end{pmatrix}$$
+
+---
+
+## 详细说明
+
 ## 继续追问
 <img width="1568" height="467" alt="image" src="https://github.com/user-attachments/assets/290d817d-76e2-4164-890d-1e20d7bc4ece" />
 

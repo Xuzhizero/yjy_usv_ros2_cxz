@@ -1,5 +1,59 @@
 # Draft(吃水深度)模块分析
 
+## 模块功能说明
+
+**Draft（吃水深度）**模块根据排水体积和浮筒几何参数计算船舶的吃水深度$T$。吃水深度是船舶浸入水中的垂直距离，是船舶静水力学的基本参数。
+
+## 输入输出端口
+
+### 输入
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $\nabla$ | nabla (来自Volume模块) | 排水体积 | m³ |
+
+内部使用的常量：
+
+| 常量名 | Simulink变量名 | 值 | 说明 |
+|--------|----------------|-----|------|
+| 浮筒数量 | Constant | 2 | 双体船浮筒数量 |
+| 方形系数 | Constant1 | Cb_pont | 浮筒方形系数 |
+| 浮筒宽度 | Constant2 | B_pont | 浮筒宽度 (m) |
+| 浮筒长度 | Constant3 | L | 浮筒长度 (m) |
+
+### 输出
+
+| 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
+|------|--------|----------------|----------|------|
+| 1 | $T$ | Draft (m) | 吃水深度 | m |
+
+## Simulink变量对应关系表
+
+| 物理量符号 | Simulink变量名 | 计算公式/来源 | 说明 |
+|------------|----------------|---------------|------|
+| $\nabla$ | nabla | 输入端口1 | 排水体积 |
+| $N$ | Constant | 2 | 浮筒数量 |
+| $C_b$ | Cb_pont | Constant1 | 方形系数 |
+| $B$ | B_pont | Constant2 | 浮筒宽度 |
+| $L$ | L | Constant3 | 浮筒长度 |
+| $\nabla/N$ | Divide1输出 | $\nabla / 2$ | 单浮筒分配体积 |
+| $\nabla/(N \cdot C_b)$ | Divide2输出 | 上一步 $/C_b$ | 中间结果 |
+| $\nabla/(N \cdot C_b \cdot B)$ | Divide3输出 | 上一步 $/B$ | 中间结果 |
+| $T$ | Divide4输出 / Draft (m) | 上一步 $/L$ | 最终吃水深度 |
+
+## 核心计算公式
+
+$$
+\boxed{
+T = \frac{\nabla}{N \cdot C_b \cdot L \cdot B}
+}
+$$
+
+对于双体船（$N=2$）：
+$$T = \frac{\nabla}{2 \cdot C_b \cdot L \cdot B}$$
+
+---
+
 ## 提问
 <img width="1222" height="112" alt="image" src="https://github.com/user-attachments/assets/a989a686-2ddc-465f-908c-ea5fe414efca" />
 
