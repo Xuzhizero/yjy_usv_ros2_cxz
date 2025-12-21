@@ -224,11 +224,91 @@ $$M_A = \text{diag}(-X_{\dot{u}} \cdot m, -Y_{\dot{v}} \cdot m, -Z_{\dot{w}} \cd
 
 ---
 
-## 数据来源
+## Simulink 模型导出文件
 
-本文档中的变量映射表基于以下 CSV 文件提取：
-- `input_processing_connections.csv` - 模块连接关系
-- `input_processing_parameters.csv` - 模块参数值
+为了完整保存 Input Processing 模块的结构信息，已将该模块解析为两个 CSV 表格文件，可用于文档化、版本控制和模型重建。
+
+### 1. 参数表（Parameter Table）
+
+**文件**: [`input_processing_parameters.csv`](./input_processing_parameters.csv)
+
+**用途**: 记录模块内所有块（Block）的完整配置参数
+
+**表结构**:
+
+| 列名 | 说明 | 示例 |
+|-----|------|------|
+| BlockPath | 块的完整 Simulink 路径 | `ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Payload Mass (kg)` |
+| BlockType | 块类型 | `Inport`, `Constant`, `Gain`, `Subsystem` 等 |
+| ParamContext | 参数上下文路径 | `Block`, `PortProperties/Port[out:1]` |
+| ParamName | 参数名称 | `Position`, `Port`, `Value`, `Gain` 等 |
+| ParamValue | 参数值 | `"[110, 123, 140, 137]"`, `mp`, `0.1` 等 |
+
+**典型应用**:
+- 查找特定块的所有配置参数（如增益值、常量值、位置坐标）
+- 提取模型中使用的工作区变量名称
+- 重建块的属性设置（端口名、信号传播名等）
+- 比对不同版本模型的参数变化
+
+**使用示例**:
+```bash
+# 查找所有 Gain 块的增益值
+grep ",Gain," input_processing_parameters.csv | grep "ParamName,Gain"
+
+# 查找特定块的所有参数
+grep "Added Mass (Hydrodynamics)/Gain," input_processing_parameters.csv
+```
+
+### 2. 连接表（Connection Table）
+
+**文件**: [`input_processing_connections.csv`](./input_processing_connections.csv)
+
+**用途**: 记录模块内所有信号线的连接关系
+
+**表结构**:
+
+| 列名 | 说明 | 示例 |
+|-----|------|------|
+| SourceBlockPath | 源块的完整路径 | `ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Gain1` |
+| SourcePortType | 源端口类型 | `out` |
+| SourcePortIndex | 源端口编号 | `1`, `2`, `3` 等 |
+| DestBlockPath | 目标块的完整路径 | `ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Added Mass (Hydrodynamics)/Added Mass (Hydrodynamcis)` |
+| DestPortType | 目标端口类型 | `in` |
+| DestPortIndex | 目标端口编号 | `1`, `2`, `3` 等 |
+
+**典型应用**:
+- 追踪信号流向（某个块的输出连接到哪些块）
+- 反向追溯信号来源（某个块的输入来自哪里）
+- 绘制数据流图
+- 分析模块间的依赖关系
+- 验证模型连线的完整性
+
+**使用示例**:
+```bash
+# 查找特定块的所有输出连接
+grep "^ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/Draft (m)/Divide7," input_processing_connections.csv
+
+# 查找特定块的所有输入来源
+grep "ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum1,in," input_processing_connections.csv
+```
+
+### 3. 文件生成说明
+
+这两个 CSV 文件是通过 MATLAB/Simulink API 自动解析生成的，包含了以下完整信息：
+
+- **所有层级的子系统**：递归解析了 Input Processing 及其所有子模块
+- **完整的块参数**：包括块类型、位置、端口属性、计算参数等
+- **完整的连接关系**：记录了所有块之间的信号连线
+
+**注意事项**:
+- BlockPath 使用完整的 Simulink 路径，便于定位
+- 端口索引从 1 开始计数（符合 MATLAB 习惯）
+- 参数值中的数组用双引号包裹（如位置坐标）
+- 部分参数可能为空（ParamContext 为空表示块级参数）
+
+### 4. 与本文档的关系
+
+本文档中的"Simulink 变量映射表"是从上述 CSV 文件中提取的关键信息摘要，方便快速查阅。完整的参数和连接信息请参考原始 CSV 文件。
 
 ---
 
