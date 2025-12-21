@@ -16,10 +16,10 @@
 
 | 常量名 | Simulink变量名 | 值 | 说明 |
 |--------|----------------|-----|------|
-| 浮筒数量 | Constant | 2 | 双体船浮筒数量 |
-| 方形系数 | Constant1 | Cb_pont | 浮筒方形系数 |
-| 浮筒宽度 | Constant2 | B_pont | 浮筒宽度 (m) |
-| 浮筒长度 | Constant3 | L | 浮筒长度 (m) |
+| 浮筒数量 | Constant6 | 2 | 双体船浮筒数量 |
+| 方形系数 | block coefficient | Cb_pont | 浮筒方形系数 |
+| 浮筒宽度 | beam pontoon (m) | B_pont | 浮筒宽度 (m) |
+| 浮筒长度 | length (m) | L | 浮筒长度 (m) |
 
 ### 输出
 
@@ -32,14 +32,11 @@
 | 物理量符号 | Simulink变量名 | 计算公式/来源 | 说明 |
 |------------|----------------|---------------|------|
 | $\nabla$ | nabla | 输入端口1 | 排水体积 |
-| $N$ | Constant | 2 | 浮筒数量 |
-| $C_b$ | Cb_pont | Constant1 | 方形系数 |
-| $B$ | B_pont | Constant2 | 浮筒宽度 |
-| $L$ | L | Constant3 | 浮筒长度 |
-| $\nabla/N$ | Divide1输出 | $\nabla / 2$ | 单浮筒分配体积 |
-| $\nabla/(N \cdot C_b)$ | Divide2输出 | 上一步 $/C_b$ | 中间结果 |
-| $\nabla/(N \cdot C_b \cdot B)$ | Divide3输出 | 上一步 $/B$ | 中间结果 |
-| $T$ | Divide4输出 / Draft (m) | 上一步 $/L$ | 最终吃水深度 |
+| $N$ | Constant6 | 2 | 浮筒数量 |
+| $C_b$ | block coefficient (值=Cb_pont) | Constant块 | 方形系数 |
+| $B$ | beam pontoon (m) (值=B_pont) | Constant块 | 浮筒宽度 |
+| $L$ | length (m) (值=L) | Constant块 | 浮筒长度 |
+| $T$ | Divide7输出 / draft | $\nabla / N / C_b / B / L$ | 最终吃水深度（一步完成除法运算） |
 
 ## 核心计算公式
 
