@@ -10,16 +10,16 @@
 
 | 端口 | 变量名 | Simulink信号名 | 物理含义 | 单位 |
 |------|--------|----------------|----------|------|
-| 1 | $r_g$ | rg (来自CG corrected for payload) | 修正后的重心位置向量 | m |
-| 2 | $r_p$ | rp (Payload Location) | 载荷在CO坐标系下的位置向量 | m |
-| 3 | $m_p$ | mp (Payload Mass) | 载荷质量 | kg |
+| 1 | $r_p$ | rp (Payload Location) | 载荷在CO坐标系下的位置向量 | m |
+| 2 | $m_p$ | mp (Payload Mass) | 载荷质量 | kg |
 
 内部使用的常量：
 
-| 常量名 | Simulink变量名 | 说明 |
-|--------|----------------|------|
-| $m$ | mass (kg)（值=m） | 船体质量 |
-| $I_{g,CG}$ | Ig_CG (Inertia at CG) | 船体在质心处的转动惯量矩阵（3×3） |
+| 常量名 | Simulink变量名 | 值 | 说明 |
+|--------|----------------|-----|------|
+| $r_g$ | CG hull only (m) | rg | 船体质心位置向量 |
+| $m$ | Gain | m | 船体质量（用作Gain增益） |
+| $I_{g,CG}$ | Inertial Matrix in CG | Ig_CG | 船体在质心处的转动惯量矩阵（3×3） |
 
 ### 输出
 
@@ -31,18 +31,18 @@
 
 | 物理量符号 | Simulink变量名 | 计算公式/来源 | 说明 |
 |------------|----------------|---------------|------|
-| $m$ | mass (kg) | Constant块 | 船体质量 |
-| $m_p$ | mp | 输入端口3 | 载荷质量 |
-| $r_g$ | rg | 输入端口1 | 修正后重心位置 |
-| $r_p$ | rp | 输入端口2 | 载荷位置 |
-| $I_{g,CG}$ | Ig_CG | Constant块 | 质心处惯量 |
+| $r_p$ | rp | 输入端口1 | 载荷位置 |
+| $m_p$ | mp | 输入端口2 | 载荷质量 |
+| $r_g$ | CG hull only (m) | Constant块 (值=rg) | 船体质心位置 |
+| $m$ | Gain | Gain块 (增益=m) | 船体质量 |
+| $I_{g,CG}$ | Inertial Matrix in CG | Constant块 (值=Ig_CG) | 质心处惯量 |
 | $S(r_g)$ | Smtrx输出 | 反对称矩阵构造 | 重心叉乘矩阵 |
 | $S(r_p)$ | Smtrx1输出 | 反对称矩阵构造 | 载荷叉乘矩阵 |
-| $S(r_g)^2$ | Matrix Multiply输出 | $S(r_g) \times S(r_g)$ | 中间变量 |
-| $S(r_p)^2$ | Matrix Multiply1输出 | $S(r_p) \times S(r_p)$ | 中间变量 |
-| $m \cdot S(r_g)^2$ | Product输出 | 船体平行轴修正项 | 中间变量 |
-| $m_p \cdot S(r_p)^2$ | Product1输出 | 载荷平行轴修正项 | 中间变量 |
-| $I_g$ | Sum输出 | 最终转动惯量 | 输出 |
+| $S(r_g)^2$ | Product2输出 | $S(r_g) \times S(r_g)$ | 中间变量 |
+| $S(r_p)^2$ | Product3输出 | $S(r_p) \times S(r_p)$ | 中间变量 |
+| $m \cdot S(r_g)^2$ | Gain输出 | 船体平行轴修正项 | 中间变量 |
+| $m_p \cdot S(r_p)^2$ | Product11输出 | 载荷平行轴修正项 | 中间变量 |
+| $I_g$ | Add3输出 (名称=Ig) | 最终转动惯量 | 输出 |
 
 ## 核心计算公式
 
