@@ -174,5 +174,61 @@ $$
 
 ---
 
+## Simulink 变量映射表
 
+以下是 Input Processing 模块中从 Simulink 模型参数 CSV 提取的关键变量映射：
+
+### 输入端口映射
+
+| 端口号 | 端口名称 | Simulink变量名 | 物理含义 |
+|-------|---------|---------------|---------|
+| 1 | Payload Mass (kg) | mp | 载荷质量 |
+| 2 | Payload Location (m) | rp | 载荷位置向量 |
+| 3 | Gravity (m/s²) | g | 重力加速度 |
+| 4 | Water Density (kg/m³) | rho | 水密度 |
+| 5 | Current Speed (m/s) | V_c | 水流速度 |
+| 6 | Current Direction (rad) | beta_c | 水流方向 |
+| 7 | X | X | 六自由度状态向量 |
+
+### 附加质量系数（Added Mass Hydrodynamics）
+
+| 增益模块 | 增益值 | 输出变量 | 物理含义 |
+|---------|-------|---------|---------|
+| Gain | -0.1 | Xudot | 纵荡附加质量系数 $X_{\dot{u}}$ |
+| Gain2 | -1.5 | Yvdot | 横荡附加质量系数 $Y_{\dot{v}}$ |
+| Gain3 | -1.0 | Zwdot | 垂荡附加质量系数 $Z_{\dot{w}}$ |
+| Gain4 | -0.2 | Kpdot | 横摇附加惯量系数 $K_{\dot{p}}$ |
+| Gain5 | -0.2 | Mqdot | 纵摇附加惯量系数 $M_{\dot{q}}$ |
+| Gain6 | -0.1 | Nrdot | 艏摇附加惯量系数 $N_{\dot{r}}$ |
+
+**说明**：附加质量矩阵 $M_A$ 为对角矩阵，各系数乘以船体质量 m 后构成对角元素：
+$$M_A = \text{diag}(-X_{\dot{u}} \cdot m, -Y_{\dot{v}} \cdot m, -Z_{\dot{w}} \cdot m, -K_{\dot{p}} \cdot I_{xx}, -M_{\dot{q}} \cdot I_{yy}, -N_{\dot{r}} \cdot I_{zz})$$
+
+### 内部常量参数
+
+| 模块路径 | 变量名 | 说明 |
+|---------|-------|------|
+| mass (kg) | m | 船体质量（工作区变量） |
+| CG hull only (m) | rg_hull | 船体重心位置 |
+| Inertial Matrix in CG | I_CG | 船体在CG处的惯性张量 |
+
+### 输出信号映射
+
+| 输出端口 | 信号名 | 物理含义 |
+|---------|-------|---------|
+| Add5 | M in CO | 总惯性矩阵（CO坐标系） |
+| Added Mass (Hydrodynamics) | MA | 附加质量矩阵 |
+| G_CF | G_CF | 浮心处弹簧刚度矩阵 |
+| Transform CG to CO | H | CG到CO变换矩阵 |
+| Transform CF to CO | H2 | CF到CO变换矩阵 |
+
+---
+
+## 数据来源
+
+本文档中的变量映射表基于以下 CSV 文件提取：
+- `input_processing_connections.csv` - 模块连接关系
+- `input_processing_parameters.csv` - 模块参数值
+
+---
 
