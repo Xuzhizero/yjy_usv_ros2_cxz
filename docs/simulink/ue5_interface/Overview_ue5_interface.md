@@ -11,6 +11,12 @@ UE5接口模块负责将Simulink仿真数据实时发送到虚幻引擎5(Unreal 
 | [simulink2UE5](simulink2UE5.md) | 20 | 主UE5通信接口 | 主用 | 23 |
 | [simulink2UE1](simulink2UE1.md) | 751 | 备用UE5通信接口 | 备用 | 46 |
 
+## 技术文档
+
+| 文档 | 功能 | 状态 |
+|------|------|------|
+| [UE5_BBox_Projection](UE5_BBox_Projection.md) | 3D包围盒投影至2D BBox蓝图实现 | ✅ 完成 |
+
 ## 数据流架构
 
 ```
