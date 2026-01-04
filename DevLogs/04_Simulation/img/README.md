@@ -39,5 +39,26 @@
 
 ---
 
+## GM_Negative_Natural_Frequency_NaN_Issue.md 相关图片
+
+### 5. simulink_6dof_overview.png
+**描述**：6DOF 模块总体结构图（第一张用户提供的图片）
+**内容**：显示 ROS2_simulink_UE5_0821 → Subsystem → Vessel Platform → 6DOF (In CO) 模块结构，包含 Inertials、Forces and Moments、Kinematics 等模块，以及右侧的输出端口（Surge Velocity, Sway Velocity, Heave Velocity, Roll Rate, Pitch Rate, Yaw Rate, x, y, z, Roll Angle, Pitch Angle, Yaw Angle, Acc X, Acc Y, Acc Z, Angular Acc X, Angular Acc Y 等）
+
+**待上传** - 请将第一张 Simulink 截图保存为此文件名
+
+### 6. natural_frequency_module.png
+**描述**：自然频率计算模块详细结构图（第二张用户提供的图片）
+**内容**：显示 Natural Frequencies 模块的内部结构，包含 G33、G44、G55、M 等输入端口，U-Y 转换模块，平方根运算模块，以及 w3 w4 w5 输出端口
+
+**待上传** - 请将第二张 Simulink 截图保存为此文件名
+
+## 图片上传说明
+
+将以上图片文件保存到 `DevLogs/04_Simulation/img/` 目录下，文档中会自动引用。
+
+---
+
 **创建日期**: 2025-12-21
+**最后更新**: 2026-01-04
 
