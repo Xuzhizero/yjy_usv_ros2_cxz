@@ -50,10 +50,10 @@
     - **输出 V**：用于浮力、刚度、吃水计算。
 
 2. **CG corrected for payload**：
-    - 根据载荷质量与其在船体纵向（surge）方向上的位置 $t_p$，修正整体重心位置：
+    - 根据载荷质量与其位置 $r_p$，修正整体重心位置：
 
 $$
-r_g = \frac{m_h r_{g_h} + m_p t_p}{m_h + m_p}
+r_g = \frac{m_h r_{g_h} + m_p r_p}{m_h + m_p}
 $$
 
 + **输出** $r_g$：后续惯性矩阵和静水矩阵都要用到重心位置。
@@ -311,4 +311,5 @@ grep "ROS2_simulink_UE5_0821/Subsystem/Vessel Platform/Input Processing/GM/Sum1,
 本文档中的"Simulink 变量映射表"是从上述 CSV 文件中提取的关键信息摘要，方便快速查阅。完整的参数和连接信息请参考原始 CSV 文件。
 
 ---
+
 
