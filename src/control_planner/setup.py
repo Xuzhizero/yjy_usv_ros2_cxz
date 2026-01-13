@@ -55,6 +55,7 @@ setup(
             'usv_Simulation_rudder = control_planner.usvSim:main',
             'keyboard_interaction = control_planner.keyboard_interaction:main',
             'publish_joint_angle = control_planner.publish_joint_angle:main',
+            'image_subscriber = control_planner.imageSubscriber:main',
         ],
     },
 )
