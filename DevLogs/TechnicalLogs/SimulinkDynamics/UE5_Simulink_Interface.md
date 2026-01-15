@@ -309,7 +309,105 @@ switch flag
 end
 ```
 
-#### Step 3: 时间同步
+#### Step 3: 图像数据发布 — ROS 2 Write Image Block
+
+Simulink 中的 **ROS 2 Write Image Block** 用于将 Simulink 中的图像数据转换成标准的 ROS 2 `sensor_msgs/Image` 消息，它封装了所有需要的字段（包括 height、width、encoding、step、data 等），无需手动构造复杂的 Bus 或手写 encoding 字符串。
+
+**Block 功能示意图**:
+
+<!-- TODO: 插入 ROS 2 Write Image Block 功能示意图 -->
+![ROS 2 Write Image Block 功能示意](./images/ros2_write_image_block_diagram.png)
+
+##### 📥 输入端口（Inputs）
+
+| 端口 | 说明 |
+|------|------|
+| **Image（必需）** | 传入的图像数据信号（一般是从相机、图像处理模块生成的矩阵） |
+
+**支持的尺寸**:
+- 彩色图像：M×N×3
+- 灰度图像：M×N
+
+**支持的数据类型**:
+- `single`、`double`、`int8`、`uint8`、`uint16` 等
+
+##### 📤 输出端口（Outputs）
+
+| 端口 | 说明 |
+|------|------|
+| **Msg** | 非虚拟 Bus 信号，表示完整合法的 ROS 2 `sensor_msgs/Image` 消息 |
+
+**输出 Bus 自动包含的标准字段**:
+- `header`（可外接 Header Assignment 模块修改）
+- `height`, `width`, `step`
+- `encoding`（由 Block 参数设置）
+- `data`（图像像素矩阵线性展开后的数组）
+
+##### ⚙️ 参数设置（Image Encoding）
+
+在 Block 的参数对话框中可以指定 **Image Encoding**：
+
+| 编码格式 | 说明 |
+|----------|------|
+| `rgb8`（默认） | RGB 8位彩色图像 |
+| `rgba8` | RGBA 8位彩色图像（含透明通道） |
+| `mono8` | 8位灰度图像 |
+| `bgr8` | BGR 8位彩色图像 |
+| ... | 其他 ROS 支持的编码格式 |
+
+此参数决定：
+- ✔ `encoding` 字段在消息中的值
+- ✔ `data` 字段的解释方式（通道顺序等）
+
+##### 🔌 与 ROS 2 Publish 模块的连接
+
+**Write Image Block 输出的 Msg bus 可以直接连接到 ROS 2 Publish 块**：
+
+```
+[图像信号] → Write Image → [Msg (Image)] → ROS2 Publish
+```
+
+**Simulink 连线示意**:
+
+<!-- TODO: 插入 Simulink 连线示意图 -->
+![Write Image 与 Publish 连接示意](./images/write_image_publish_connection.png)
+
+**在 ROS 2 Publish Block 中配置**:
+- Message Type: `sensor_msgs/Image`
+- Topic: 设为目标主题（如 `/camera/image_raw`）
+
+##### 🚀 使用优势
+
+| 优势 | 说明 |
+|------|------|
+| 自动填充 height/width/step | 不用手动做 Bus Assignment |
+| 直接设置 encoding 参数 | 避免字符串赋值错误（如 Unsupported Encoding） |
+| 数据类型支持丰富 | 自动处理 Simulink 信号数据到 sensor_msgs/Image |
+| 与 Publish 块直接兼容 | 可直接连线，发布到 ROS 2 网络 |
+
+##### 📝 使用流程示例
+
+```matlab
+% 简单使用流程：
+% 1. 把相机/图像矩阵信号连接到 Write Image Block
+% 2. 在 Block 参数里选择合适的 encoding（如 rgb8）
+% 3. 将 Write Image 输出的 Msg 连接到 ROS2 Publish Block
+% 4. 在 Publish Block 设置 Topic、Message Type 即可
+```
+
+**完整连接示意**:
+
+<!-- TODO: 插入完整连接示意图 -->
+![完整图像发布流程](./images/complete_image_publish_flow.png)
+
+##### 📚 参考文档
+
+> *The Write Image block writes image data to a ROS or ROS 2 image message. You can specify the encoding for the output image message. Use the ROS Publish or ROS 2 Publish block to publish the output image message to an active topic on the network.*
+> — [MathWorks 官方文档](https://www.mathworks.com/help/ros/ref/writeimageblock.html)
+
+---
+
+#### Step 4: 时间同步
 
 **同步策略**:
 
