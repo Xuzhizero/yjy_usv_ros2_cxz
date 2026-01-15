@@ -1,0 +1,6 @@
+# 图片占位目录
+# 请将以下图片放置于此目录：
+#
+# 1. ros2_write_image_block_diagram.png - ROS 2 Write Image Block 功能示意图
+# 2. write_image_publish_connection.png - Write Image 与 Publish 连接示意图
+# 3. complete_image_publish_flow.png - 完整图像发布流程图
