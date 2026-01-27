@@ -9,7 +9,7 @@ simulink2UE1是备用的虚幻引擎通信接口，结构比主接口simulink2UE
 | 属性 | 值 |
 |------|-----|
 | SID | 751 |
-| 内部模块数 | 46 |
+| 内部模块数 | 47 |
 | 内部连线数 | 29 |
 | 输入端口数 | 3 |
 | 嵌套子系统数 | 2 |
@@ -23,8 +23,9 @@ simulink2UE1是备用的虚幻引擎通信接口，结构比主接口simulink2UE
 | Display | 7 | 数值显示/调试 |
 | Inport | 3 | 输入端口 |
 | DataTypeConversion | 3 | 数据类型转换 |
+| Goto | 1 | 信号路由（新增） |
 | SubSystem | 2 | MATLAB Function子系统 |
-| 其他 | 5 | 其他功能模块 |
+| 其他 | 5 | 其他功能模块（Mux、Reshape等） |
 
 ## 输入/输出
 
@@ -43,7 +44,7 @@ simulink2UE1是备用的虚幻引擎通信接口，结构比主接口simulink2UE
 
 | 特性 | simulink2UE5 | simulink2UE1 |
 |------|--------------|--------------|
-| 模块数 | 23 | 46 |
+| 模块数 | 23 | 47 |
 | Constant数 | 4 | 14 |
 | Reference数 | 5 | 12 |
 | 复杂度 | 简单 | 复杂 |
