@@ -1,4 +1,4 @@
-# ROS2_simulink_UE5_0821 模型概述
+# ROS2_simulink_UE5_260106 模型概述
 
 ## 模型简介
 
@@ -8,15 +8,20 @@
 
 | 项目 | 数量 |
 |------|------|
-| 总系统/子系统数 | 58 |
-| 总模块数 | 889 |
-| 总连线数 | 824 |
-| 顶层子系统数 | 7 |
+| 总系统/子系统数 | 59 |
+| 总模块数 | 947 |
+| 总连线数 | 854 |
+| 顶层子系统数 | 8 |
+
+> 说明：本页已按 `src/ROS2_simulink_UE5_260106.slx` 更新。与旧版 `ROS2_simulink_UE5_0821.slx` 相比，新增了顶层的图像发布/处理链路（`MATLAB Function` 子系统），以及少量模块与接线调整。
 
 ## 层级架构
 
 ```
-ROS2_simulink_UE5_0821 (Root)
+ROS2_simulink_UE5_260106 (Root)
+│
+├── MATLAB Function (SID:970)       # 图像数据处理/打包（新增）
+│   └── 10个模块, 9条连线
 │
 ├── ROS2simulink (SID:10)          # ROS2输入处理
 │   └── 18个模块, 9条连线
@@ -44,7 +49,7 @@ ROS2_simulink_UE5_0821 (Root)
 │       └── Output Processing
 │
 ├── simulink2UE1 (SID:751)         # UE5通信接口(备用)
-│   └── 46个模块, 29条连线
+│   └── 47个模块, 29条连线
 │
 └── simulink2UE5 (SID:20)          # UE5通信接口(主)
     └── 23个模块, 13条连线
@@ -54,12 +59,13 @@ ROS2_simulink_UE5_0821 (Root)
 
 ### 1. 输入阶段
 - **ROS2接口**: 接收外部控制命令和状态数据
-- **常数模块**: 提供螺旋桨转速设定值 (左120rpm, 右121rpm)
+- **常数模块**: 顶层常数 `PropellerCommand_L_rpm / PropellerCommand_R_rpm` 当前默认均为 0（通常由 ROS2 输入或上层逻辑驱动）
 
 ### 2. 处理阶段
 - **Bus Creator**: 组合控制命令为总线信号
 - **Subsystem**: 执行船舶动力学计算
 - **Scenario**: 管理仿真场景参数
+- **MATLAB Function (SID:970)**: 图像数据处理/打包（新增），与 `Write Image` + `Publish` 模块形成图像发布链路
 
 ### 3. 输出阶段
 - **Bus Selector**: 提取关键状态量
@@ -69,6 +75,7 @@ ROS2_simulink_UE5_0821 (Root)
   - speed (m/s) - 速度
   - Yaw Rate (rad/s) - 偏航率
 - **Simulink2ROS**: 发布数据到ROS2
+- **Publish1 / Publish2**: 图像与其元数据的发布（新增）
 - **simulink2UE5**: 发送可视化数据到虚幻引擎5
 - **Scope**: 实时监控关键参数
 
@@ -87,6 +94,11 @@ Scenario ──→ Bus Selector ─┬─ Yaw Angle ──→ Simulink2ROS
                            ├─ y ──────────→ Simulink2ROS
                            ├─ speed ──────→ Scope3
                            └─ Yaw Rate ───→ Simulink2ROS
+
+（新增：图像发布链路，顶层关键接线）
+From ──→ Write Image ──→ Publish1
+Blank Message1 + Constant(注释掉) + Constant1 ──→ Bus Assignment1 ──→ Publish2
+MATLAB Function ──→ Bus Assignment2 ──→ Publish2
 ```
 
 ## 系统关键特性
@@ -130,7 +142,7 @@ Scenario ──→ Bus Selector ─┬─ Yaw Angle ──→ Simulink2ROS
 
 2. **在MATLAB命令行窗口中运行**：
    ```matlab
-   % 使用默认模型名（ROS2_simulink_UE5_0821）
+   % 使用默认模型名（ROS2_simulink_UE5_260106）
    export_slx_connections
 
    % 或指定其他模型名
@@ -153,12 +165,12 @@ Scenario ──→ Bus Selector ─┬─ Yaw Angle ──→ Simulink2ROS
 % =========================================================================
 
 function export_slx_connections(mdl)
-% mdl: 模型名称（不带 .slx 扩展名），例如 'ROS2_simulink_UE5_0821'
+% mdl: 模型名称（不带 .slx 扩展名），例如 'ROS2_simulink_UE5_260106'
 %      如果未提供，使用默认值
 
 % ========= 0) 配置 =========
 if nargin < 1
-    mdl = 'ROS2_simulink_UE5_0821'; % 默认模型名
+    mdl = 'ROS2_simulink_UE5_260106'; % 默认模型名
 end
 
 fprintf('正在加载模型: %s\n', mdl);
@@ -464,4 +476,4 @@ end
 - [船体规格参数](船体规格参数.md) - 船体尺寸、吨位和推力曲线
 - [仿真变量参考](仿真变量参考.md) - 仿真模型变量及导出方法
 - [船体水动力参数获取方法](船体水动力参数获取方法.md) - 水动力参数说明
-- [Inertials变量来源说明](Inertials变量来源说明.md) - 惯性参数说明
+- [惯性参数说明](subsystem_748/vessel_platform/inertials/Overview_inertials.md) - 惯性参数说明
